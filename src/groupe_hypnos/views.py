@@ -1,8 +1,6 @@
 from django.shortcuts import render
 
 
-def index(request):
-  return render(request, 'groupe_hypnos/hotel.html')
 
 def home_view(request):
     return render(request, 'home.html')

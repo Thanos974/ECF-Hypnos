@@ -22,7 +22,7 @@ body {
 
 /* Formulaire de contact */
 
-footer p {
+footer {
   background-color: var(--bs-gray);
   color: var(--bs-white);
 }
