@@ -1,0 +1,28 @@
+@import 'root.css';
+
+nav {
+  background-color: var(--bs-gray);
+}
+
+nav > div > a {
+  color: var(--bs-white);
+}
+
+.nav-link {
+  color: var(--bs-white);
+}
+
+body {
+  background: url('images/bienvenue.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Formulaire de contact */
+
+footer p {
+  background-color: var(--bs-gray);
+  color: var(--bs-white);
+}
