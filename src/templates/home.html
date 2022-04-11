@@ -1,12 +1,6 @@
-{% extends 'base.html' %} {% load static %}
-
-<div class="container-fluid container-background">
-  {% block body %}
-  <img
-    class="img-fluid"
-    src="{% static 'images/bienvenue.jpg' %}"
-    alt="image home"
-  />
-
-  {% endblock %}
-</div>
+{% extends 'base.html' %} {% load static %} {% block content %}
+<img src="{% static 'images/bienvenue.jpg' %}" alt="" class="img-fluid" />
+<section class="py-5 text-center container">
+  Bienvenue dans le groupe Hôtelier Hypnos
+</section>
+{% endblock %}

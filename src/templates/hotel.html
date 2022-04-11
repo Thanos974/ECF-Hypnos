@@ -1,17 +1,231 @@
-{% extends 'base.html' %} {% load static %}{% block content %}
-<div class="card">
-  <img
-    src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
-    class="card-img-top"
-    alt="Fissure in Sandstone"
-  />
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </p>
-    <a href="#!" class="btn btn-primary">Button</a>
+{% extends 'base.html' %} {% load static %} {% block title %}
+<title>Nos hôtels</title>
+{% endblock %} {% block content %}
+<section class="hotel-list py-5 bg-container">
+  <h2 class="text-center py-3">Nos Hôtels</h2>
+  <div class="container">
+    <div
+      class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center"
+    >
+      <div class="col rounded-top">
+        <div class="card shadow-sm text-center text-white">
+          <img
+            src="{% static 'images/hotel.jpg' %}"
+            class="card-img-top"
+            alt="image hypnos paris"
+            height="200"
+          />
+        </div>
+
+        <div class="card-body bg-custom">
+          <h4 class="text-center">Le Cocooning</h4>
+          <h5 class="card-title text-center">Paris</h5>
+          <p class="card-text text-center py-2">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div class="text-center">
+            <div class="btn-group">
+              <a
+                href="#"
+                type="button"
+                class="btn btn-sm btn-custom text-light rounded-pill"
+              >
+                Découvrir</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col rounded-top">
+        <div class="card shadow-sm text-center text-white">
+          <img
+            src="{% static 'images/hotel8.jpg' %}"
+            class="card-img-top"
+            alt="image hypnos paris"
+            height="200"
+          />
+        </div>
+
+        <div class="card-body bg-custom">
+          <h4 class="text-center">Le Cocooning</h4>
+          <h5 class="card-title text-center">Paris</h5>
+          <p class="card-text text-center py-2">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div class="text-center">
+            <div class="btn-group">
+              <a
+                href="#"
+                type="button"
+                class="btn btn-sm btn-custom text-light rounded-pill"
+              >
+                Découvrir</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col rounded-top">
+        <div class="card shadow-sm text-center text-white">
+          <img
+            src="{% static 'images/hotel2.jpg' %}"
+            class="card-img-top"
+            alt="image hypnos paris"
+            height="200"
+          />
+        </div>
+
+        <div class="card-body bg-custom">
+          <h4 class="text-center">Le Cocooning</h4>
+          <h5 class="card-title text-center">Paris</h5>
+          <p class="card-text text-center py-2">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div class="text-center">
+            <div class="btn-group">
+              <a
+                href="#"
+                type="button"
+                class="btn btn-sm btn-custom text-light rounded-pill"
+              >
+                Découvrir</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col rounded-top">
+        <div class="card shadow-sm text-center text-white">
+          <img
+            src="{% static 'images/hotel5.jpg' %}"
+            class="card-img-top"
+            alt="image hypnos paris"
+            height="200"
+          />
+        </div>
+
+        <div class="card-body bg-custom">
+          <h4 class="text-center">Le Cocooning</h4>
+          <h5 class="card-title text-center">Paris</h5>
+          <p class="card-text text-center py-2">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div class="text-center">
+            <div class="btn-group">
+              <a
+                href="#"
+                type="button"
+                class="btn btn-sm btn-custom text-light rounded-pill"
+              >
+                Découvrir</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col rounded-top">
+        <div class="card shadow-sm text-center text-white">
+          <img
+            src="{% static 'images/hotel4.jpg' %}"
+            class="card-img-top"
+            alt="image hypnos paris"
+            height="200"
+          />
+        </div>
+
+        <div class="card-body bg-custom">
+          <h4 class="text-center">Le Cocooning</h4>
+          <h5 class="card-title text-center">Paris</h5>
+          <p class="card-text text-center py-2">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div class="text-center">
+            <div class="btn-group">
+              <a
+                href="#"
+                type="button"
+                class="btn btn-sm btn-custom text-light rounded-pill"
+              >
+                Découvrir</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col rounded-top">
+        <div class="card shadow-sm text-center text-white">
+          <img
+            src="{% static 'images/hotel7.jpg' %}"
+            class="card-img-"
+            alt="image hypnos paris"
+            height="200"
+            width="450"
+          />
+        </div>
+
+        <div class="card-body bg-custom">
+          <h4 class="text-center">Le Cocooning</h4>
+          <h5 class="card-title text-center">Paris</h5>
+          <p class="card-text text-center py-2">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div class="text-center">
+            <div class="btn-group">
+              <a
+                href="#"
+                type="button"
+                class="btn btn-sm btn-custom text-light rounded-pill"
+              >
+                Découvrir</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col rounded-top">
+        <div class="card shadow-sm text-center text-white">
+          <img
+            src="{% static 'images/hotel6.jpg' %}"
+            class="card-img-top"
+            alt="image hypnos paris"
+            height="200"
+          />
+        </div>
+
+        <div class="card-body bg-custom">
+          <h4 class="text-center">Le Cocooning</h4>
+          <h5 class="card-title text-center">Paris</h5>
+          <p class="card-text text-center py-2">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div class="text-center">
+            <div class="btn-group">
+              <a
+                href="#"
+                type="button"
+                class="btn btn-sm btn-custom text-light rounded-pill"
+              >
+                Découvrir</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+
 {% endblock %}

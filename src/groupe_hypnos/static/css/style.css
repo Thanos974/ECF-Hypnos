@@ -20,6 +20,18 @@ body {
   background-size: cover;
 }
 
+.btn-custom {
+  background-color: var(--bs-blue);
+}
+
+.bg-container {
+  background-color: #c8cecd;
+}
+
+.bg-custom {
+  background-color: #e4e6e6;
+}
+
 /* Formulaire de contact */
 
 footer {
