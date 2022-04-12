@@ -1,5 +1,123 @@
-{% extends 'base.html' %} {% load static %} 
-
-{% block title %}
+{% extends 'base.html' %} {% load static %} {% block title %}
 <title>Nous Contacter</title>
-{% endblock %} {% block content %} {% endblock %}
+{% endblock %} {% block content %}
+
+<section id="contact" class="bg-container py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h3 fw-bold>Contactez-nous</h3>
+        <p class="lead py-5">
+          Vous avez une question ? Utilisez notre formulaire de contact et nos
+          équipes vous répondrons dans les meilleurs délais.
+        </p>
+        <aside>
+          <div class="container py-3">
+            <div class="row">
+              <div class="col-xl-4 col-md-6">
+                <div class="contact-text py-3 bg-custom">
+                  <i class="fa fa-envelope"></i>
+                  <span>Notre adresse:</span>
+                  <p>47 place de jovialité <br />77173 Chevry-Cossigny</p>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="contact-text py-3 bg-custom">
+                  <i class="fa-solid fa-at"></i>
+                  <span>Email:</span> <br />
+                  <a href="mailto:info@hypnos.com"
+                    >contact@hypnos.fr <br /><br
+                  /></a>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="contact-text py-3 bg-custom">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>Par Téléphone:</span>
+                  <p>(+33) 7 69 65 63 03 <br /><br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <form>
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text">
+              <i class="fas fa-user"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Nom" />
+          </div>
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text">
+              <i class="fas fa-user"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Prénom" />
+          </div>
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text">
+              <i class="fas fa-at"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Email" />
+          </div>
+          <div class="input-group input-group-lg mb-3">
+            <button
+              class="btn btn-custom dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Motifs
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Je souhaiterais faire une réclamation</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Je souhaiterais ajouter un service supplémentaire</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Je voudrais avoir des informations supplémentaire sur une
+                  suite</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Je rencontre un problème avec l'application</a
+                >
+              </li>
+            </ul>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Text input with dropdown button"
+            />
+          </div>
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text">
+              <i class="fas fa-pencil-alt"></i>
+            </span>
+            <textarea
+              rows="5"
+              class="form-control"
+              placeholder="Saisir votre message"
+            ></textarea>
+          </div>
+          <div class="d-grid gap-2">
+            <input
+              type="submit"
+              value="Envoyer"
+              class="btn btn-custom btn-block btn-lg"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

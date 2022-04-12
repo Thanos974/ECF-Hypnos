@@ -1,7 +1,15 @@
 @import 'root.css';
 
+/********** Header **********/
+
+/********** Nav **********/
+
 nav {
   background-color: var(--bs-gray);
+}
+
+.navbar-brand {
+  font-family: var(--font-family);
 }
 
 nav > div > a {
@@ -12,17 +20,31 @@ nav > div > a {
   color: var(--bs-white);
 }
 
-body {
-  background: url('images/bienvenue.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.nav-link:hover {
+  color: var(--bs-gunmetal);
 }
+
+/********** Suites **********/
+
+a {
+  color: var(--bs-blue);
+}
+
+a:hover {
+  color: var(--bs-gray);
+}
+
+/********** Button **********/
 
 .btn-custom {
   background-color: var(--bs-blue);
 }
+
+.btn:hover {
+  background-color: var(--bs-gray);
+}
+
+/********** Background **********/
 
 .bg-container {
   background-color: #c8cecd;
@@ -32,7 +54,15 @@ body {
   background-color: #e4e6e6;
 }
 
-/* Formulaire de contact */
+/* #bg-image {
+  background: url('images/connexion.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+
+/********** Footer **********/
 
 footer {
   background-color: var(--bs-gray);

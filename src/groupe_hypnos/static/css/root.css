@@ -7,6 +7,7 @@
   --bs-white: #ffffff;
   --bs-gunmetal: #2f3542;
   --font-family: 'Newsreader', sans-serif;
+  --font-family-custom: 'Poppins', sans-serif;
 }
 
 html {
@@ -34,13 +35,21 @@ ul {
   padding: 0;
   font-weight: normal;
   text-align: center;
-  /* color: var(--bs-white); */
 }
 
+h5 {
+  font-family: var(--font-family);
+}
+
+p,
 ol,
 ul,
-li {
+li,
+h1,
+h2,
+h4 {
   list-style: none;
+  font-family: var(--font-family-custom);
 }
 
 img {

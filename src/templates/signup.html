@@ -1,13 +1,25 @@
 {% extends 'base.html' %} {% load static %} {% block title %}
-<title>Se connecter</title>
+<title>S'inscrire'</title>
 {% endblock %} {% block content %}
 <section id="contact" class="bg-container">
   <div class="container py-5">
     <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <h3 class="pb-5">Se connecter</h3>
+      <div class="col-lg-6">
+        <h3 class="pb-5">Créer votre compte Hypnos</h3>
 
         <form>
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text">
+              <i class="fas fa-user"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Nom" />
+          </div>
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text">
+              <i class="fas fa-user"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Prénom" />
+          </div>
           <div class="input-group input-group-lg mb-3">
             <span class="input-group-text">
               <i class="fas fa-at"></i>

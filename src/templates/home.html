@@ -1,6 +1,18 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
-<img src="{% static 'images/bienvenue.jpg' %}" alt="" class="img-fluid" />
-<section class="py-5 text-center container">
-  Bienvenue dans le groupe Hôtelier Hypnos
-</section>
+{% extends 'base.html' %} {% load static %} {% block header %}
+
+<img src="{% static 'images/bienvenue.jpg' %}" alt="" class="bg-transparent" />
+
+{% endblock %} {% block content %}
+
+<div class="text-intro text-light bg-transparent">
+  <h1>Bienvenue dans le groupe hôtelier Hypnos</h1>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-md-12 col-md-offset-2 col-xl-8 text-center">
+    <h2>Nos services en chambres</h2>
+    <p></p>
+  </div>
+</div>
+
 {% endblock %}
