@@ -19,3 +19,6 @@ def login_view(request):
 
 def signup_view(request):
     return render(request, 'signup.html')
+
+def book_view(request):
+    return render(request, 'book.html')

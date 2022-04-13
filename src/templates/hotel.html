@@ -1,21 +1,29 @@
-{% extends 'base.html' %} {% load static %} {% block title %}
-<title>Nos hôtels</title>
-{% endblock %} {% block content %}
+{% extends 'base.html' %} {% load static %} 
+
+
+
+{% block title %}
+Nos hôtels
+{% endblock %} 
+
+
+
+
+{% block content %}
+
 <section class="hotel-list py-5 bg-container">
-  <h1 class="text-center py-3">Nos Hôtels</h1>
+  <h1 class="text-center py-3 fw-bold text-custom">Nos Hôtels</h1>
   <div class="container">
-    <div
-      class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center"
-    >
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
       <div class="col rounded-top">
         <div class="card shadow-sm text-center text-white">
           <img
             src="{% static 'images/hotel.jpg' %}"
             class="card-img-top"
             alt="image hypnos paris"
+            
           />
         </div>
-
         <div class="card-body bg-custom">
           <h4 class="text-center">Le Cocooning</h4>
           <h5 class="card-title text-center">Paris</h5>
@@ -26,7 +34,7 @@
           <div class="text-center">
             <div class="btn-group">
               <button
-                href="#"
+                href="/hotel/cocooning"
                 type="button"
                 class="btn btn-sm btn-custom text-light rounded-pill"
               >
@@ -36,7 +44,6 @@
           </div>
         </div>
       </div>
-
       <div class="col rounded-top">
         <div class="card shadow-sm text-center text-white">
           <img
@@ -219,5 +226,4 @@
     </div>
   </div>
 </section>
-
 {% endblock %}

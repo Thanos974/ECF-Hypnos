@@ -1,23 +1,43 @@
 @import 'root.css';
 
 /********** Header **********/
-.masthead {
-  background: url('https://cdn.pixabay.com/photo/2017/08/10/16/11/burj-al-arab-2624317_1280.jpg')
-    no-repeat;
+
+.home {
+  background: url('https://cdn.pixabay.com/photo/2019/07/23/09/49/hotel-4357159_960_720.jpg')
+  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.img-login {
-  background: url('https://images.unsplash.com/photo-1471880504582-cf7e63045303?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=662&q=80')
+.img-book {
+  background: url('https://cdn.pixabay.com/photo/2021/02/03/00/10/receptionists-5975962_960_720.jpg')
     no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
+.img-signup,
+.img-login {
+  background: url('https://cdn.pixabay.com/photo/2018/04/13/11/17/paper-3316268_960_720.jpg')
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.contact {
+  background: url('https://cdn.pixabay.com/photo/2018/04/07/18/06/diary-3299128_960_720.jpg')
+    no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /********** Nav **********/
 
 nav {
@@ -28,25 +48,13 @@ nav {
   font-family: var(--font-family);
 }
 
-nav > div > a {
-  color: var(--bs-white);
-}
-
-.nav-link {
-  color: var(--bs-white);
-}
-
-.nav-link:hover {
-  color: var(--bs-gunmetal);
-}
-
 /********** Suites **********/
 
-a {
+.details {
   color: var(--bs-blue);
 }
 
-a:hover {
+.details:hover {
   color: var(--bs-gray);
 }
 
@@ -60,6 +68,11 @@ a:hover {
   background-color: var(--bs-gray);
 }
 
+
+.menu:hover {
+  background-color: var(--bs-gunmetal);
+}
+
 /********** Background **********/
 
 .bg-container {
@@ -70,17 +83,22 @@ a:hover {
   background-color: #e4e6e6;
 }
 
-/* #bg-image {
-  background: url('images/connexion.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
+.text-custom {
+  color: var(--bs-gunmetal);
+}
 
 /********** Footer **********/
 
 footer {
   background-color: var(--bs-gray);
   color: var(--bs-white);
+}
+
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 960px) {
 }

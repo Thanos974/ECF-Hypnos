@@ -1,46 +1,44 @@
-{% extends 'base.html' %} {% load static %} 
-
-
+{% extends 'base.html' %} {% load static %}
 
 {% block title %}
-S'inscrire
-{% endblock %} 
+Réservation
+{% endblock %}
 
 
 
 {% block header %}
-<div class="container-fluid img-signup py-5">
+<div class="container-fluid img-book py-5">
   <div class="row justify-content-center">
-    <div class="col-lg-4">
-      <h2 class="pb-5 text-custom fw-bold text-center">Créer votre compte Hypnos</h2>
+    <div class="col-lg-6">
+      <h3 class="pb-5 text-light">Réserver votre suite</h3>
 
       <form>
         <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
-            <i class="fas fa-user"></i>
+            <i class="fas fa-hotel"></i>
           </span>
-          <input type="text" class="form-control" placeholder="Nom" />
+          <input type="text" class="form-control" placeholder="Choisir un hôtel" />
         </div>
         <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
-            <i class="fas fa-user"></i>
+            <i class="fas fa-bed"></i>
           </span>
-          <input type="text" class="form-control" placeholder="Prénom" />
+          <input type="text" class="form-control" placeholder="Suite" />
         </div>
         <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
-            <i class="fas fa-at"></i>
+            <i class="fa-solid fa-calendar-check"></i>
           </span>
-          <input type="email" class="form-control" placeholder="Email" />
+          <input type="datetime-local" class="form-control"  />
         </div>
         <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
-            <i class="fas fa-lock"></i>
+            <i class="fa-solid fa-calendar-check"></i>
           </span>
           <input
-            type="password"
+            type="datetime-local"
             class="form-control"
-            placeholder="Mot de passe"
+            
           />
         </div>
 
@@ -59,5 +57,5 @@ S'inscrire
 
 
 {% block content %}
-
 {% endblock %}
+

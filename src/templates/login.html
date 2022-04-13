@@ -1,13 +1,12 @@
-{% extends 'base.html' %} {% load static %} {% block title %}
-<title>Se connecter</title>
-{% endblock %} {% block header %}
-<header class="img-login">
-  <div class="container">
+{% extends 'base.html' %} {% load static %} {% block title %} Se connecter
+{%endblock %} {% block header %}
+<header class="">
+  <div class="container-fluid img-login">
     <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <h3 class="py-5 text-light">Se connecter</h3>
+      <div class="col-lg-4">
+        <h2 class="py-5 text-custom fw-bold text-center">Se connecter</h2>
 
-        <form>
+        <form class="mt-5">
           <div class="input-group input-group-lg mb-3">
             <span class="input-group-text">
               <i class="fas fa-at"></i>
@@ -29,49 +28,15 @@
             <input
               type="submit"
               value="Envoyer"
-              class="btn btn-custom btn-block text-light btn-lg"
+              class="btn btn-custom btn-block text-light btn-lg m-50"
             />
           </div>
+          
         </form>
       </div>
     </div>
   </div>
 </header>
-{% endblock %} {% block content %} {% comment %}
-<section id="contact" class="bg-container">
-  <div class="container py-5">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <h3 class="pb-5">Se connecter</h3>
+{% endblock %} 
 
-        <form>
-          <div class="input-group input-group-lg mb-3">
-            <span class="input-group-text">
-              <i class="fas fa-at"></i>
-            </span>
-            <input type="email" class="form-control" placeholder="Email" />
-          </div>
-          <div class="input-group input-group-lg mb-3">
-            <span class="input-group-text">
-              <i class="fas fa-lock"></i>
-            </span>
-            <input
-              type="password"
-              class="form-control"
-              placeholder="Mot de passe"
-            />
-          </div>
-
-          <div class="d-grid gap-2">
-            <input
-              type="submit"
-              value="Envoyer"
-              class="btn btn-custom btn-block text-light btn-lg"
-            />
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-{% endcomment %} {% endblock %}
+{% block content %}  {% endblock %}
