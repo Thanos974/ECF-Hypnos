@@ -1,11 +1,24 @@
-{% extends 'base.html' %} {% load static %} {% block title %} Se connecter
-{%endblock %} {% block header %}
-<header class="">
-  <div class="container-fluid img-login">
-    <div class="row justify-content-center">
-      <div class="col-lg-4">
-        <h2 class="py-5 text-custom fw-bold text-center">Se connecter</h2>
+{% extends 'base.html' %} {% load static %} 
 
+
+{% block title %} 
+Se connecter
+{%endblock %} 
+
+
+/************ Le Formulaire de connexion ************/
+
+{% block header %}
+
+  
+
+{% endblock %} 
+
+{% block content %}
+<div class="container-fluid img-login">
+    <div class="row justify-content-center d-flex align-items-center">
+      <div class="col-lg-4">
+        <h2 class="pt-5 text-custom fw-bold text-center">Se connecter</h2>
         <form class="mt-5">
           <div class="input-group input-group-lg mb-3">
             <span class="input-group-text">
@@ -23,7 +36,6 @@
               placeholder="Mot de passe"
             />
           </div>
-
           <div class="d-grid gap-2">
             <input
               type="submit"
@@ -31,12 +43,9 @@
               class="btn btn-custom btn-block text-light btn-lg m-50"
             />
           </div>
-          
         </form>
       </div>
     </div>
   </div>
-</header>
-{% endblock %} 
 
-{% block content %}  {% endblock %}
+{% endblock %}
