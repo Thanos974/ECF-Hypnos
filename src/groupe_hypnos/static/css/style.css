@@ -29,16 +29,25 @@
 }
 .contact {
   background: url('https://cdn.pixabay.com/photo/2018/04/07/18/06/diary-3299128_960_720.jpg');
-  height: 100%; 
+  height: auto; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/********** Nav **********/
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+
+/********** Navbar **********/
 
 nav {
   background-color: var(--bs-gray);
+  
 }
 
 .navbar-brand {
@@ -55,7 +64,7 @@ nav {
   color: var(--bs-gray);
 }
 
-/********** Button **********/
+/********** Button et Button hover **********/
 
 .btn-custom {
   background-color: var(--bs-blue);
@@ -65,9 +74,18 @@ nav {
   background-color: var(--bs-gray);
 }
 
+.btn-booking {
+  background-color: var(--bs-gunmetal);
+}
 
+.btn-booking:hover {
+  background-color: var(--bs-gray);
+}
+
+/********** Navbar hover **********/
 .menu:hover {
   background-color: var(--bs-gunmetal);
+  border-radius: 10px;
 }
 
 /********** Background **********/
@@ -81,7 +99,7 @@ nav {
 }
 
 .text-custom {
-  color: var(--bs-gunmetal);
+  color: var(--bs-white);
 }
 
 /********** Footer **********/
@@ -91,11 +109,44 @@ footer {
   color: var(--bs-white);
 }
 
-@media screen and (min-width: 600px) {
+
+
+/********** Media Queries mobile first **********/
+
+
+@media screen and (min-width: 576px) {
+  .text-custom {
+    color: var(--bs-white);
+  }
+  .input-form {
+   
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .text-custom {
+    color: var(--bs-white);
+  }
+  .input-form {
+   
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 992px) {
+  .text-custom {
+    color: var(--bs-white);
+  }
+ 
+}
+
+@media screen and (min-width: 1200px) {
+  .text-custom {
+    color: var(--bs-white);
+  }
+
 }

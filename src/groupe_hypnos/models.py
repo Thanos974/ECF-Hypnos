@@ -11,3 +11,9 @@ class Hotel(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Suite(models.Model):
+    title = models.CharField(max_length=100, unique=True, verbose_name="")
+    description = models.CharField(max_length=400)
+    price = models.FloatField(max_length=6, verbose_name="prix")

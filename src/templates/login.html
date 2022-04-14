@@ -1,51 +1,43 @@
-{% extends 'base.html' %} {% load static %} 
+{% extends 'base.html' %} {% load static %} {% block title %} Se connecter
+{%endblock %}
 
+<!--- Formulaire de connexion -->
 
-{% block title %} 
-Se connecter
-{%endblock %} 
-
-
-/************ Le Formulaire de connexion ************/
-
-{% block header %}
-
-  
-
-{% endblock %} 
-
-{% block content %}
+{% block header %} {% endblock %} {% block content %}
 <div class="container-fluid img-login">
-    <div class="row justify-content-center d-flex align-items-center">
-      <div class="col-lg-4">
-        <h2 class="pt-5 text-custom fw-bold text-center">Se connecter</h2>
-        <form class="mt-5">
-          <div class="input-group input-group-lg mb-3">
-            <span class="input-group-text">
-              <i class="fas fa-at"></i>
-            </span>
-            <input type="email" class="form-control" placeholder="Email" />
-          </div>
-          <div class="input-group input-group-lg mb-3">
-            <span class="input-group-text">
-              <i class="fas fa-lock"></i>
-            </span>
-            <input
-              type="password"
-              class="form-control"
-              placeholder="Mot de passe"
-            />
-          </div>
-          <div class="d-grid gap-2">
-            <input
-              type="submit"
-              value="Envoyer"
-              class="btn btn-custom btn-block text-light btn-lg m-50"
-            />
-          </div>
-        </form>
-      </div>
+  <div class="row justify-content-center box">
+    <div class="col-lg-4">
+      <h2 class="pt-5 fw-bold text-center">Se connecter</h2>
+      <form class="mt-5">
+        <div class="input-group input-group-lg mb-3">
+          <span class="input-group-text">
+            <i class="fas fa-at"></i>
+          </span>
+          <input type="email" class="form-control" placeholder="Email" />
+        </div>
+        <div class="input-group input-group-lg mb-3">
+          <span class="input-group-text">
+            <i class="fas fa-lock"></i>
+          </span>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Mot de passe"
+          />
+        </div>
+        <div class="d-grid gap-2">
+          <input
+            type="submit"
+            value="Envoyer"
+            class="btn btn-custom btn-block text-light btn-lg m-50"
+          />
+        </div>
+        <div class=" text-center fs-3 pt-5">
+          <a type="button" href="{% url 'signup' %}">Créer un compte Hypnos</a>
+        </div>
+      </form>
     </div>
   </div>
+</div>
 
 {% endblock %}

@@ -6,17 +6,15 @@
   --bs-blue: #41b2c9;
   --bs-white: #ffffff;
   --bs-gunmetal: #2f3542;
-  --font-family: 'Newsreader', sans-serif;
-  --font-family-custom: 'Poppins', sans-serif;
+  --font-family: 'Newsreader' serif;
+  --font-family-custom: 'Poppins' sans-serif;
 }
 
 html {
   box-sizing: border-box;
   font-size: 16px;
   height: 100%;
-  overflow-x: hidden; 
-  
-  
+  overflow-x: hidden;
 }
 
 *,
@@ -31,31 +29,29 @@ h2,
 h3,
 h4,
 h5,
-h6,
 p,
-ol,
 ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
-  
-  
-  
 }
 
-h5 {
-  font-family: var(--font-family);
-}
-
-p,
-ol,
-ul,
-li,
 h1,
 h2,
+h3,
 h4 {
-  list-style: none;
   font-family: var(--font-family-custom);
 }
 
+a,
+p,
+h5,
+span {
+  font-family: var(--font-family);
+}
 
+ol,
+ul,
+li {
+  list-style: none;
+}

@@ -4,7 +4,7 @@
 Nos Suites 
 {%endblock %} 
 
-/************ Les Suites ************/
+<!--- Les suites -->
 
 {% block content %}
 
@@ -12,7 +12,7 @@ Nos Suites
   <h1 class="text-center py-3 fw-bold">Nos Suites</h1>
   <div class="container">
     <div
-      class="row row-cols-1 row-cols-sm-2 row-cols-sm-3 g-3 justify-content-center"
+      class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 justify-content-center"
     >
       <div class="col rounded-top">
         <div class="card shadow-sm text-center text-white">
@@ -23,7 +23,7 @@ Nos Suites
           />
         </div>
 
-        <div class="card-body bg-custom">
+        <div class="card-body bg-custom text-center">
           <h4 class="text-center">Suite Deluxe</h4>
           <h5 class="card-title text-center">Paris</h5>
           <p class="card-text text-center py-2">
@@ -32,26 +32,33 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="#" class="details me-5">En savoir plus</a>
-            <button
-              href="#"
+            <a
+              href="{% url 'login' %}"
               type="button"
-              class="btn btn-sm btn-custom text-light rounded-pill"
+              class="btn btn-sm btn-custom text-light rounded-pill me-3"
             >
               Réserver
-            </button>
+            </a>
+            <a
+            href="https://www.booking.com/" target="_blank"
+            type="button"
+            class="btn btn-sm btn-booking text-light rounded-pill"
+          >
+            Booking
+          </a>
           </div>
         </div>
       </div>
       <div class="col rounded-top">
         <div class="card shadow-sm text-center text-white">
           <img
-            src="{% static 'images/suites11.jpg' %}"
+            src="{% static 'images/suite15.jpg' %}"
             class="card-img-top"
             alt="image hypnos paris"
           />
         </div>
 
-        <div class="card-body bg-custom">
+        <div class="card-body bg-custom text-center">
           <h4 class="text-center">Suite Saint-Honoré</h4>
           <h5 class="card-title text-center">Paris</h5>
           <p class="card-text text-center py-2">
@@ -60,12 +67,19 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="#" class="details me-5">En savoir plus</a>
-            <button
-              href="#"
+            <a
+              href="{% url 'login' %}"
               type="button"
-              class="btn btn-sm btn-custom text-light rounded-pill">
+              class="btn btn-sm btn-custom text-light rounded-pill me-3">
               Réserver
-            </button>
+            </a>
+            <a
+            href="https://www.booking.com/" target="_blank"
+            type="button"
+            class="btn btn-sm btn-booking text-light rounded-pill"
+          >
+            Booking
+          </a>
           </div>
         </div>
       </div>
@@ -79,7 +93,7 @@ Nos Suites
           />
         </div>
 
-        <div class="card-body bg-custom">
+        <div class="card-body bg-custom text-center">
           <h4 class="text-center">Suite Honeymoon</h4>
           <h5 class="card-title text-center">Paris</h5>
           <p class="card-text text-center py-2">
@@ -88,13 +102,20 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="#" class="details me-5">En savoir plus</a>
-            <button
-              href="#"
+            <a
+              href="{% url 'login' %}"
               type="button"
-              class="btn btn-sm btn-custom text-light rounded-pill"
+              class="btn btn-sm btn-custom text-light rounded-pill me-3"
             >
               Réserver
-            </button>
+            </a>
+            <a
+            href="https://www.booking.com/" target="_blank"
+            type="button"
+            class="btn btn-sm btn-booking text-light rounded-pill"
+          >
+            Booking
+          </a>
           </div>
         </div>
       </div>
@@ -108,7 +129,7 @@ Nos Suites
           />
         </div>
 
-        <div class="card-body bg-custom">
+        <div class="card-body bg-custom text-center">
           <h4 class="text-center">Suite Penthouse</h4>
           <h5 class="card-title text-center">Paris</h5>
           <p class="card-text text-center py-2">
@@ -117,13 +138,20 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="#" class="details me-5">En savoir plus</a>
-            <button
-              href="#"
+            <a
+              href="{% url 'login' %}"
               type="button"
-              class="btn btn-sm btn-custom text-light rounded-pill"
+              class="btn btn-sm btn-custom text-light rounded-pill me-3"
             >
               Réserver
-            </button>
+            </a>
+            <a
+            href="https://www.booking.com/" target="_blank"
+            type="button"
+            class="btn btn-sm btn-booking text-light rounded-pill"
+          >
+            Booking
+          </a>
           </div>
         </div>
       </div>
@@ -131,13 +159,13 @@ Nos Suites
       <div class="col rounded-top">
         <div class="card shadow-sm text-center text-white">
           <img
-            src="{% static 'images/suites5.jpg' %}"
+            src="{% static 'images/suites16.jpg' %}"
             class="card-img-top"
             alt="image hypnos paris"
           />
         </div>
 
-        <div class="card-body bg-custom">
+        <div class="card-body bg-custom text-center">
           <h4 class="text-center">Suite Royale</h4>
           <h5 class="card-title text-center">Paris</h5>
           <p class="card-text text-center py-2">
@@ -146,13 +174,20 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="#" class="details me-5">En savoir plus</a>
-            <button
-              href="#"
+            <a
+              href="{% url 'login' %}"
               type="button"
-              class="btn btn-sm btn-custom text-light rounded-pill"
+              class="btn btn-sm btn-custom text-light rounded-pill me-3"
             >
               Réserver
-            </button>
+            </a>
+            <a
+            href="https://www.booking.com/" target="_blank"
+            type="button"
+            class="btn btn-sm btn-booking text-light rounded-pill"
+          >
+            Booking
+          </a>
           </div>
         </div>
       </div>
@@ -165,7 +200,7 @@ Nos Suites
             alt="image hypnos paris"
           />
         </div>
-        <div class="card-body bg-custom">
+        <div class="card-body bg-custom text-center">
           <h4 class="text-center">Suite Impérial</h4>
           <h5 class="card-title text-center">Paris</h5>
           <p class="card-text text-center py-2">
@@ -174,13 +209,20 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="#" class="details me-5">En savoir plus</a>
-            <button
-              href="#"
+            <a
+              href="{% url 'login' %}"
               type="button"
-              class="btn btn-sm btn-custom text-light rounded-pill"
+              class="btn btn-sm btn-custom text-light rounded-pill me-3"
             >
               Réserver
-            </button>
+            </a>
+            <a
+            href="https://www.booking.com/" target="_blank"
+            type="button"
+            class="btn btn-sm btn-booking text-light rounded-pill"
+          >
+            Booking
+          </a>
           </div>
         </div>
       </div>
@@ -193,7 +235,7 @@ Nos Suites
             alt="image hypnos paris"
           />
         </div>
-        <div class="card-body bg-custom">
+        <div class="card-body bg-custom text-center">
           <h4 class="text-center">Suite Lumière</h4>
           <h5 class="card-title text-center">Paris</h5>
           <p class="card-text text-center py-2">
@@ -202,13 +244,20 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="#" class="details me-5">En savoir plus</a>
-            <button
-              href="#"
+            <a
+              href="{% url 'login' %}"
               type="button"
-              class="btn btn-sm btn-custom text-light rounded-pill"
+              class="btn btn-sm btn-custom text-light rounded-pill me-3"
             >
               Réserver
-            </button>
+            </a>
+            <a
+            href="https://www.booking.com/" target="_blank"
+            type="button"
+            class="btn btn-sm btn-booking text-light rounded-pill"
+          >
+            Booking
+          </a>
           </div>
         </div>
       </div>
@@ -221,7 +270,7 @@ Nos Suites
             alt="image hypnos paris"
           />
         </div>
-        <div class="card-body bg-custom">
+        <div class="card-body bg-custom text-center">
           <h4 class="text-center">Suite Presidentielle</h4>
           <h5 class="card-title text-center">Paris</h5>
           <p class="card-text text-center py-2">
@@ -230,13 +279,20 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="#" class="details me-5">En savoir plus</a>
-            <button
-              href="#"
+            <a
+              href="{% url 'login' %}"
               type="button"
-              class="btn btn-sm btn-custom text-light rounded-pill"
+              class="btn btn-sm btn-custom text-light rounded-pill me-3"
             >
               Réserver
-            </button>
+            </a>
+            <a
+            href="https://www.booking.com/" target="_blank"
+            type="button"
+            class="btn btn-sm btn-booking text-light rounded-pill"
+          >
+            Booking
+          </a>
           </div>
         </div>
       </div>
@@ -250,7 +306,7 @@ Nos Suites
           />
         </div>
 
-        <div class="card-body bg-custom">
+        <div class="card-body bg-custom text-center">
           <h4 class="text-center">Suite Prestige Junior</h4>
           <h5 class="card-title text-center">Paris</h5>
           <p class="card-text text-center py-2">
@@ -259,13 +315,20 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="#" class="details me-5">En savoir plus</a>
-            <button
-              href="#"
+            <a
+              href="{% url 'login' %}"
               type="button"
-              class="btn btn-sm btn-custom text-light rounded-pill"
+              class="btn btn-sm btn-custom text-light rounded-pill me-3"
             >
               Réserver
-            </button>
+            </a>
+            <a
+            href="https://www.booking.com/" target="_blank"
+            type="a"
+            class="btn btn-sm btn-booking text-light rounded-pill"
+          >
+            Booking
+          </a>
           </div>
         </div>
       </div>
