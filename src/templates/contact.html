@@ -8,26 +8,31 @@ Nous Contacter
 
 {% block header %}
 
+
+{% endblock %} 
+
+
+{% block content %} 
 <div class="contact container-fluid">
   <div class="row justify-content-center text-center">
-    <div class="col-lg-7">
-      <h2 class="fw-bold pt-5 text-custom fs-1">Contactez-nous</h2>
-      <p class="pb-3 text-custom fs-4">
+    <div class="col-md-7 pb-5">
+      <h2 class="fw-bold pt-5 text-custom fs-1 animate__animated animate__backInUp ainfinite animate__slow	3s">Contactez-nous</h2>
+      <p class="pb-3 text-custom fs-4 animate__animated animate__fadeInDownBig ainfinite animate__slow	3s">
         Vous avez une question ? Utilisez notre formulaire de contact et nos
         équipes vous répondrons dans les meilleurs délais.
       </p>
       <section>
         <div class="container pb-3">
           <div class="row direction">
-            <div class="col-xl-4 col-md-6">
-              <div class="contact-text py-3 bg-custom">
+            <div class="col-lg-4 col-md-6">
+              <div class="contact-text py-3 bg-custom border border-dark">
                 <i class="fa fa-envelope"></i>
                 <span>Notre adresse:</span>
                 <p>47 place de jovialité <br />77173 Chevry-Cossigny</p>
               </div>
             </div>
-            <div class="col-xl-4 col-md-6">
-              <div class="contact-text py-3 bg-custom">
+            <div class="col-lg-4 col-md-6">
+              <div class="contact-text py-3 bg-custom border border-dark">
                 <i class="fa-solid fa-at"></i>
                 <span>Email:</span> <br />
                 <a href="mailto:info@hypnos.com"
@@ -35,8 +40,8 @@ Nous Contacter
                 /></a>
               </div>
             </div>
-            <div class="col-xl-4 col-md-6">
-              <div class="contact-text py-3 bg-custom">
+            <div class="col-lg-4 col-md-6">
+              <div class="contact-text py-3 bg-custom border border-dark">
                 <i class="fa-solid fa-phone"></i>
                 <span>Par Téléphone:</span>
                 <p>(+33) 7 69 65 63 03 <br /><br /></p>
@@ -86,8 +91,7 @@ Nous Contacter
             </li>
             <li>
               <a class="dropdown-item" href="#"
-                >Je souhaite en savoir plus sur une
-                suite</a
+                >Je souhaite en savoir plus sur une suite</a
               >
             </li>
             <li>
@@ -123,7 +127,4 @@ Nous Contacter
     </div>
   </div>
 </div>
-{% endblock %} 
-
-
-{% block content %}  {% endblock %}
+{% endblock %}

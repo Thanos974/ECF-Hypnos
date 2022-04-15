@@ -1,44 +1,25 @@
-{% extends 'base.html' %} {% load static %} 
+{% extends 'base.html' %} {% load static %}
 
-{% block title %} 
-Accueil
-{%endblock%} 
-
-<!--- L'Accueil -->
+{% block title %}
+Hôtels Le Cocooning Paris
+{% endblock %}
 
 {% block header %}
 
-  <div class="home container-fluid justify-content-center">
-    <div class="row py-5">
-      <div class="box text-center">
-        <h1 class="text-light txt-animation fs-1"></h1>
-        
-      </div>
-      <div class="row">
-        <div class="text-center">
-          <button href="#" type="button" class=" btn btn-custom text-light ">
-            Choisir un hôtel
-          </button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
+  
+{% endblock %}
 
-{% endblock %} 
-
-
-{% block content %} 
+{% block content %}
 
 <section class="container py-5">
   <div class="row container">
-    <h2 class="py-5 text-center animate__animated animate__backInLeft animate__repeat-2	2	infinite animate__slow	3s">Qui sommmes nous?</h2>
+    <h2 class="py-5 text-center animate__animated animate__backInLeft animate__repeat-2	2	infinite animate__slow	3s">Le Cocooning Paris</h2>
       <div class="col-md ">
         <img src="{% static 'images/hypnos.jpg' %}" alt="" class="img-fluid" width="900" height="400" >
       </div>
       <div class="col-md py-3">
         <i class="fa-solid fa-hotel fa-2x d-inline px-2"></i>
-        <h2 class="d-inline">Groupe Hypnos</h2>  
+        <h2 class="d-inline"></h2>  
         <hr class="my-4">
         <p class="lead">La société <strong>Hypnos</strong> est un groupe hôtelier fondé en <strong>"2004"</strong>. Nous sommes propriétaire de <strong>7</strong> établissements dans les quatre 
           coins de l’hexagone, chacun de ces hôtels s’avère être une destination idéale pour les couples 
@@ -116,3 +97,4 @@ Accueil
   </div>
 </section>
 {% endblock %}
+

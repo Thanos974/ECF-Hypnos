@@ -8,16 +8,18 @@ S'inscrire
 
 <!--- Formulaire d'inscription -->
 
+
 {% block header %}
 
 {% endblock %}
+
 
 
 {% block content %}
 <div class="container-fluid img-signup py-5">
   <div class="row justify-content-center box">
     <div class="col-lg-4">
-      <h2 class="pb-5 fw-bold text-center">Créer votre compte Hypnos</h2>
+      <h2 class="pb-5 fw-bold text-center animate__animated animate__backInUp ainfinite animate__slow	3s">Créer votre compte Hypnos</h2>
 
       <form>
         <div class="input-group input-group-lg mb-3">
@@ -48,13 +50,12 @@ S'inscrire
             placeholder="Mot de passe"
           />
         </div>
-        <div class="form-check fw-bold mb-3">
-          <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" />
+        <div class="form-check fw-bold py-3 text-center">
+          <input class="form-check-input" type="checkbox" value="1" />
           <label class="form-check-label" for="registration_form_agreeTerms">
-            Accepter les termes
+            Accepter les conditions de souscription
           </label>
         </div>
-
         <div class="d-grid gap-2 shadow-lg">
           <input
             type="submit"
@@ -62,6 +63,7 @@ S'inscrire
             class="btn btn-custom btn-block text-light btn-lg"
           />
         </div>
+        
       </form>
     </div>
   </div>

@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from .models import Hotel
 
 
 
@@ -11,4 +12,6 @@ urlpatterns = [
     path('login/', views.login_view, name='login'),
     path('signup/', views.signup_view, name="signup"),
     path('book/', views.book_view, name="book"),
+    path('cocooning/', views.cocooning_view, name="cocooning"),
+
 ]

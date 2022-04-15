@@ -9,7 +9,7 @@
 {% url 'signup' as signup %}
 
 <!--- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark justify-content-center sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand text-light" href="{% url 'home' %}">
       <img
@@ -31,47 +31,47 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mb-2 mb-lg-0 text-light">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+      <ul class="navbar-nav mb-2 mb-lg-0 text-light text-center">
         <li class="nav-item">
           <a
-            class="nav-link menu fs-6 {% if request.path == home %} active {% endif %}"
+            class="nav-link menu fs-4 {% if request.path == home %} active {% endif %}"
             aria-current="page"
-            href="{% url 'home' %}"
+            href="{% url 'home' %}" 
             >Accueil</a
           >
         </li>
         <li class="nav-item">
           <a
-            class="nav-link menu fs-6{% if request.path == hotel %} active {% endif %}"
+            class="nav-link menu fs-4 {% if request.path == hotel %} active {% endif %}"
             href="{% url 'hotel' %}"
             >Hôtels</a
           >
         </li>
         <li class="nav-item">
           <a
-            class="nav-link menu fs-6{% if request.path == suites %} active {% endif %}"
+            class="nav-link menu fs-4 {% if request.path == suites %} active {% endif %}"
             href="{% url 'suites'  %}"
             >Suites</a
           >
         </li>
         <li class="nav-item">
           <a
-            class="nav-link menu fs-6{% if request.path == contact %} active {% endif %}"
-            href="{% url 'contact' %}"
+            class="nav-link menu fs-4{% if request.path == contact %} active {% endif %}"
+            href="{% url 'contact' %}" 
             >Contact</a
           >
         </li>
         <li class="nav-item">
           <a
-            class="nav-link menu fs-6{% if request.path == login %} active {% endif %}"
+            class="nav-link menu fs-4 {% if request.path == login %} active {% endif %}"
             href="{% url 'login' %}"
             >Connexion</a
           >
         </li>
         <li class="nav-item">
           <a
-            class="nav-link menu fs-6{% if request.path == signup %} active {% endif %}"
+            class="nav-link menu fs-4 {% if request.path == signup %} active {% endif %}"
             href="{% url 'signup' %}"
             >S'inscrire
           </a>

@@ -6,13 +6,17 @@ Nos Suites
 
 <!--- Les suites -->
 
+{% block header %}
+  <h1 class="text-center py-5 fw-bold bg-header text-custom animate__animated animate__backInLeft	infinite animate__slow	3s">Nos Suites</h1>
+{% endblock %}
+
+
 {% block content %}
 
-<section class="hotel-list py-5 bg-container">
-  <h1 class="text-center py-3 fw-bold">Nos Suites</h1>
+<section class="hotel-list py-3 bg-container">
   <div class="container">
     <div
-      class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 justify-content-center"
+      class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center"
     >
       <div class="col rounded-top">
         <div class="card shadow-sm text-center text-white">
@@ -230,7 +234,7 @@ Nos Suites
       <div class="col rounded-top">
         <div class="card shadow-sm text-center text-white">
           <img
-            src="{% static 'images/suites12.jpg' %}"
+            src="{% static 'images/suites13.jpg' %}"
             class="card-img-top"
             alt="image hypnos paris"
           />

@@ -4,16 +4,15 @@
 
 .home {
   background: url('https://cdn.pixabay.com/photo/2019/07/23/09/49/hotel-4357159_960_720.jpg');
-  height: 100%; 
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
 .img-book {
   background: url('https://cdn.pixabay.com/photo/2021/02/03/00/10/receptionists-5975962_960_720.jpg');
-  height: 100%; 
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,14 +21,14 @@
 .img-signup,
 .img-login {
   background: url('https://cdn.pixabay.com/photo/2017/08/10/16/11/burj-al-arab-2624317_1280.jpg');
-  height: 100%; 
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .contact {
   background: url('https://cdn.pixabay.com/photo/2018/04/07/18/06/diary-3299128_960_720.jpg');
-  height: auto; 
+  height: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,12 +41,10 @@
   height: 70vh;
 }
 
-
 /********** Navbar **********/
 
 nav {
   background-color: var(--bs-gray);
-  
 }
 
 .navbar-brand {
@@ -62,6 +59,32 @@ nav {
 
 .details:hover {
   color: var(--bs-gray);
+}
+
+/********** Background **********/
+
+.bg-container {
+  background-color: var(--bs-white);
+  
+}
+
+.bg-custom {
+  background-color: var(--bs-card);
+}
+
+.bg-header {
+  background-color: var(--bs-card);
+}
+
+.text-custom {
+  color: var(--bs-white);
+}
+
+/********** Footer **********/
+
+footer {
+  background-color: var(--bs-gray);
+  color: var(--bs-white);
 }
 
 /********** Button et Button hover **********/
@@ -88,59 +111,26 @@ nav {
   border-radius: 10px;
 }
 
-/********** Background **********/
 
-.bg-container {
-  background-color: #c8cecd;
-}
-
-.bg-custom {
-  background-color: #e4e6e6;
-}
-
-.text-custom {
-  color: var(--bs-white);
-}
-
-/********** Footer **********/
-
-footer {
-  background-color: var(--bs-gray);
-  color: var(--bs-white);
-}
-
-
-
-/********** Media Queries mobile first **********/
-
+/********** Media Queries pour desktop **********/
 
 @media screen and (min-width: 576px) {
-  .text-custom {
-    color: var(--bs-white);
-  }
+  
   .input-form {
-   
     margin-left: 50px;
     margin-right: 50px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .text-custom {
-    color: var(--bs-white);
-  }
+  
   .input-form {
-   
     margin-left: 50px;
     margin-right: 50px;
   }
-
 }
 
 @media screen and (min-width: 992px) {
-  .text-custom {
-    color: var(--bs-white);
-  }
  
 }
 
@@ -148,5 +138,10 @@ footer {
   .text-custom {
     color: var(--bs-white);
   }
+}
 
+@media screen and (min-width: 1400px) {
+  .text-custom {
+    color: var(--bs-gunmetal);
+  }
 }

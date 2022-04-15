@@ -1,5 +1,7 @@
+from tokenize import group
 from django.shortcuts import render
-
+from django.views.generic import ListView
+from groupe_hypnos.models import Hotel
 
 
 def home_view(request):
@@ -22,3 +24,11 @@ def signup_view(request):
 
 def book_view(request):
     return render(request, 'book.html')
+
+def cocooning_view(request):
+    hotel = Hotel.objects.all()
+    return render(request, 'groupe_hypnos/cocooning.html', context={'hotels': hotel})
+
+
+
+   

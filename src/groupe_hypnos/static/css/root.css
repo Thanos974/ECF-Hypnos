@@ -5,9 +5,10 @@
   --bs-gray: #6667ab;
   --bs-blue: #41b2c9;
   --bs-white: #ffffff;
+  --bs-card: #d1d4d4;
   --bs-gunmetal: #2f3542;
-  --font-family: 'Newsreader' serif;
-  --font-family-custom: 'Poppins' sans-serif;
+  --font-family: 'Newsreader', serif;
+  --font-family-custom: 'Poppins', sans-serif;
 }
 
 html {
@@ -30,10 +31,10 @@ h3,
 h4,
 h5,
 p,
-ul {
+ul, li {
   margin: 0;
   padding: 0;
-  font-weight: normal;
+  list-style: none;
 }
 
 h1,
@@ -48,10 +49,4 @@ p,
 h5,
 span {
   font-family: var(--font-family);
-}
-
-ol,
-ul,
-li {
-  list-style: none;
 }
