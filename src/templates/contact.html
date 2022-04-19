@@ -16,8 +16,8 @@ Nous Contacter
 <div class="contact container-fluid">
   <div class="row justify-content-center text-center">
     <div class="col-md-7 pb-5">
-      <h2 class="fw-bold pt-5 text-custom fs-1 animate__animated animate__backInUp ainfinite animate__slow	3s">Contactez-nous</h2>
-      <p class="pb-3 text-custom fs-4 animate__animated animate__fadeInDownBig ainfinite animate__slow	3s">
+      <h2 class="fw-bold pt-5 fs-1 animate__animated animate__backInUp ainfinite animate__slow	3s">Contactez-nous</h2>
+      <p class="pb-3 fs-4 animate__animated animate__fadeInDownBig ainfinite animate__slow	3s">
         Vous avez une question ? Utilisez notre formulaire de contact et nos
         équipes vous répondrons dans les meilleurs délais.
       </p>
@@ -50,8 +50,10 @@ Nous Contacter
           </div>
         </div>
       </section>
-      <form class="input-form">
-        <div class="input-group input-group-lg mb-3">
+      <form class="input-form" method="POST">
+        {% csrf_token %}
+       
+       <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
             <i class="fas fa-user"></i>
           </span>
@@ -117,11 +119,11 @@ Nous Contacter
           ></textarea>
         </div>
         <div class="d-grid gap-2">
-          <input
+          <button
             type="submit"
             value="Envoyer"
-            class="btn btn-custom btn-lg text-light"
-          />
+            class="btn btn-custom btn-lg text-light">
+          Envoyer</button>
         </div>
       </form>
     </div>

@@ -27,8 +27,8 @@
   background-size: cover;
 }
 .contact {
-  background: url('https://cdn.pixabay.com/photo/2018/04/07/18/06/diary-3299128_960_720.jpg');
-  height: auto;
+  background: url('https://cdn.pixabay.com/photo/2016/03/01/11/07/paper-1230085_1280.jpg');
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,7 +77,7 @@ nav {
 }
 
 .text-custom {
-  color: var(--bs-white);
+  color: var(--bs-gunmetal);
 }
 
 /********** Footer **********/
@@ -108,7 +108,7 @@ footer {
 /********** Navbar hover **********/
 .menu:hover {
   background-color: var(--bs-gunmetal);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 
@@ -134,14 +134,10 @@ footer {
  
 }
 
-@media screen and (min-width: 1200px) {
-  .text-custom {
-    color: var(--bs-white);
-  }
-}
 
-@media screen and (min-width: 1400px) {
-  .text-custom {
-    color: var(--bs-gunmetal);
-  }
-}
+
+
+/* RGPD */
+
+
+

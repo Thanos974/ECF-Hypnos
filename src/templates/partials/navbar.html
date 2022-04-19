@@ -35,7 +35,7 @@
       <ul class="navbar-nav mb-2 mb-lg-0 text-light text-center">
         <li class="nav-item">
           <a
-            class="nav-link menu fs-4 {% if request.path == home %} active {% endif %}"
+            class="nav-link menu fs-5 {% if request.path == home %} active {% endif %}"
             aria-current="page"
             href="{% url 'home' %}" 
             >Accueil</a
@@ -43,39 +43,55 @@
         </li>
         <li class="nav-item">
           <a
-            class="nav-link menu fs-4 {% if request.path == hotel %} active {% endif %}"
+            class="nav-link menu fs-5 {% if request.path == hotel %} active {% endif %}"
             href="{% url 'hotel' %}"
             >Hôtels</a
           >
         </li>
         <li class="nav-item">
           <a
-            class="nav-link menu fs-4 {% if request.path == suites %} active {% endif %}"
+            class="nav-link menu fs-5 {% if request.path == suites %} active {% endif %}"
             href="{% url 'suites'  %}"
             >Suites</a
           >
         </li>
         <li class="nav-item">
           <a
-            class="nav-link menu fs-4{% if request.path == contact %} active {% endif %}"
+            class="nav-link menu fs-5 {% if request.path == contact %} active {% endif %}"
             href="{% url 'contact' %}" 
             >Contact</a
           >
         </li>
-        <li class="nav-item">
-          <a
-            class="nav-link menu fs-4 {% if request.path == login %} active {% endif %}"
-            href="{% url 'login' %}"
-            >Connexion</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link menu fs-4 {% if request.path == signup %} active {% endif %}"
-            href="{% url 'signup' %}"
-            >S'inscrire
+
+
+        <li class="nav-item dropdown fs-5 menu">
+          <a class="nav-link dropdown-toggle {% if request.path == login %} active {% endif %} {% if request.path == signup %} active {% endif %}" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Espace Membre
           </a>
+          <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item " href="{% url 'login' %}">Connexion</a></li>
+            <li><a class="dropdown-item " href="{% url 'signup' %}">S'inscrire</a></li>
+          </ul>
         </li>
+
+
+        {% comment %} {% if request.user.is_authenticated %}
+          <li class="nav-item">
+            <a
+              class="nav-link menu fs-4 {% if request.path == logout %} active {% endif %}"
+              href="{% url 'login' %}"
+              >Déconnexion</a
+            >
+          </li>
+        {% else%}
+          <li class="nav-item">
+            <a
+              class="nav-link menu fs-4 {% if request.path == login %} active {% endif %}"
+              href="{% url 'login' %}"
+              >Connexion</a
+            >
+          </li>
+        {% endif %} {% endcomment %}
       </ul>
     </div>
   </div>
