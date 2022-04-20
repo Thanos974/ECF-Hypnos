@@ -1,0 +1,113 @@
+{% extends 'base.html' %} {% load static %} 
+
+{% block title %} 
+Accueil
+{%endblock%} 
+
+<!--- L'Accueil -->
+
+{% block header %}
+
+ <!-- Text d'animation Accueil -->
+
+  <div class="home container-fluid justify-content-center">
+    <div class="row py-5">
+      <div class="box text-center">
+        <h1 class="text-light txt-animation fs-1"></h1>
+      </div>
+    </div>
+  </div>
+
+{% endblock %} 
+
+
+{% block content %} 
+
+<!-- Présentation du groupe Hypnos -->
+
+<section class="container pb-3">
+  <div class="row container">
+    <h2 class="py-5 text-center animate__animated animate__backInLeft animate__repeat-2	2	infinite animate__slow	3s">Qui sommmes nous?</h2>
+      <div class="col-md ">
+        <img src="{% static 'images/hypnos.jpg' %}" alt="image hypnos" class="img-fluid" width="900" height="400" >
+      </div>
+      <div class="col-md py-2">
+        <i class="fa-solid fa-hotel fa-2x d-inline px-2"></i>
+        <h2 class="d-inline">Groupe Hypnos</h2>  
+        <hr class="my-4">
+        <p class="lead">La société <strong>Hypnos</strong> est un groupe hôtelier fondé en <strong>"2004"</strong>. Nous sommes propriétaire de <strong>7</strong> établissements dans les quatre 
+          coins de l’hexagone, chacun de ces hôtels s’avère être une destination idéale pour les couples 
+          en quête d’un séjour romantique à deux.
+          Chacune de nos suites au design luxueux vous propose des services hauts de gamme. Nos établissement sont tous pourvu d'un spa privatif 
+          notamment, de quoi plonger pleinement dans une atmosphère chic-romantique et oublié son quotidien.
+
+          Nous avons aujourd'hui une réputationde vous proposé que le meilleurs de notre expérience pour que la votre reste inoubliable.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="container">
+  <div class="row container">
+    <h2 class="py-5 text-center animate__animated animate__backInLeft animate__repeat-2	2	infinite animate__slow	3s">Notre espace détente</h2>
+      <div class="col-md py-2">
+        <i class="fa-solid fa-spa fa-2x d-inline px-2"></i>
+        <h2 class="d-inline">SPA</h2>  
+        <hr class="my-4">
+        <p class="lead">La société <strong>Hypnos</strong> est un groupe hôtelier fondé en <strong>"2004"</strong>. Nous sommes propriétaire de <strong>7</strong> établissements dans les quatre 
+          coins de l’hexagone, chacun de ces hôtels s’avère être une destination idéale pour les couples 
+          en quête d’un séjour romantique à deux.
+          Chacune de nos suites au design luxueux vous propose des services hauts de gamme. Nos établissement sont tous pourvu d'un spa privatif 
+          notamment, de quoi plonger pleinement dans une atmosphère chic-romantique et oublié son quotidien.
+          Nous avons aujourd'hui une réputationde vous proposé que le meilleurs de notre expérience pour que la votre reste inoubliable.
+        </p>
+      </div>
+      <div class="col-md">
+        <img src="{% static 'images/spa2.jpg' %}" alt="" class="img-fluid" width="900" height="400" >
+      </div>
+    </div>
+  </div>
+  
+  <div class="row container">
+    <h2 class="py-5 text-center animate__animated animate__backInLeft animate__repeat-2	2	infinite animate__slow	3s">Notre service de restauration</h2>
+    <div class="col-md ">
+      <img src="{% static 'images/food.jpg' %}" alt="image food" class="img-fluid" width="900" height="400" >
+    </div>
+    <div class="col-md py-2">
+      <i class="fa-solid fa-utensils fa-2x d-inline px-2"></i>
+      <h2 class="d-inline">Room Service</h2>  
+      <hr class="my-4">
+      <p class="lead">La société <strong>Hypnos</strong> est un groupe hôtelier fondé en <strong>"2004"</strong>. Nous sommes propriétaire de <strong>7</strong> établissements dans les quatre 
+        coins de l’hexagone, chacun de ces hôtels s’avère être une destination idéale pour les couples 
+        en quête d’un séjour romantique à deux.
+        Chacune de nos suites au design luxueux vous propose des services hauts de gamme. Nos établissement sont tous pourvu d'un spa privatif 
+        notamment, de quoi plonger pleinement dans une atmosphère chic-romantique et oublié son quotidien.
+        Nous avons aujourd'hui une réputationde vous proposé que le meilleurs de notre expérience pour que la votre reste inoubliable.
+      </p>
+    </div>
+  </div>
+
+  <div class="row container pb-5">
+    <h2 class="py-5 text-center animate__animated animate__backInLeft animate__repeat-2	2	infinite animate__slow	3s">Nos services sur mesure</h2>
+      <div class="col-md">
+        <i class="fa-solid fa-bell-concierge fa-2x d-inline px-2"></i>
+        <h2 class="d-inline">Conciergerie</h2>  
+        <hr class="my-4">
+        <p class="lead">La société <strong>Hypnos</strong> est un groupe hôtelier fondé en <strong>"2004"</strong>. Nous sommes propriétaire de <strong>7</strong> établissements dans les quatre 
+          coins de l’hexagone, chacun de ces hôtels s’avère être une destination idéale pour les couples 
+          en quête d’un séjour romantique à deux.
+          Chacune de nos suites au design luxueux vous propose des services hauts de gamme. Nos établissement sont tous pourvu d'un spa privatif 
+          notamment, de quoi plonger pleinement dans une atmosphère chic-romantique et oublié son quotidien.
+          Nous avons aujourd'hui une réputationde vous proposé que le meilleurs de notre expérience pour que la votre reste inoubliable.
+        </p>
+      </div>
+      <div class="col-md ">
+        <img src="{% static 'images/concierge.jpg' %}" alt="image concierge" class="img-fluid" width="900" height="400" >
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

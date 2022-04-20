@@ -1,19 +1,28 @@
-{% extends 'base.html' %} {% load static %} {% block title %} Se connecter
+{% extends 'base.html' %} {% load static %} 
+
+{% block title %} 
+  Se connecter
 {%endblock %}
 
 <!--- Formulaire de connexion -->
 
-{% block header %} {% endblock %} {% block content %}
+{% block header %} 
+
+{% endblock %} 
+
+{% block content %}
 <div class="container-fluid img-login">
   <div class="row justify-content-center box">
     <div class="col-lg-4">
-      <h2 class="pt-5 fw-bold text-center">Se connecter</h2>
-      <form class="mt-5">
+      <h2 class="pt-5 fw-bold text-center animate__animated animate__backInUp ainfinite animate__slow	3s">Se connecter</h2>
+      <form class="mt-5" method="POST" action="/">
+        {% csrf_token %}
+
         <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
-            <i class="fas fa-at"></i>
+            <i class="fas fa-user"></i>
           </span>
-          <input type="email" class="form-control" placeholder="Email" />
+          <input type="text" class="form-control" id="username" name="username" placeholder="Pseudo" />
         </div>
         <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
@@ -22,10 +31,12 @@
           <input
             type="password"
             class="form-control"
+            id="password"
+            name="password"
             placeholder="Mot de passe"
           />
         </div>
-        <div class="d-grid gap-2">
+          <div class="d-grid gap-2">
           <input
             type="submit"
             value="Envoyer"
@@ -33,11 +44,10 @@
           />
         </div>
         <div class=" text-center fs-3 pt-5">
-          <a type="button" href="{% url 'signup' %}">Créer un compte Hypnos</a>
-        </div>
+          <a type="button" href="{% url 'signup' %}" class="btn btn-sm btn-custom text-light ">Créer un compte Hypnos </a>
+        </div> 
       </form>
     </div>
   </div>
 </div>
-
 {% endblock %}

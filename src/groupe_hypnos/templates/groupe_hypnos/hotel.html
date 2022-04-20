@@ -6,13 +6,19 @@ Nos hôtels
 
 <!--- Hôtels -->
 
+{% block header %}
+<h1 class="bg-header text-center py-5 fw-bold text-custom animate__animated animate__backInLeft	infinite animate__slow	3s">Nos Hôtels</h1>
+
+{% endblock %}
+
+
+
 {% block content %}
 
-<section class="py-5 bg-container">
-  <h1 class="text-center py-3 fw-bold">Nos Hôtels</h1>
+<section class="py-3 bg-container">
   <div class="container">
     <div
-      class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 justify-content-center"
+      class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center"
     >
       <div class="col rounded-top">
         <div class="card shadow-lg text-center text-white">
@@ -22,7 +28,7 @@ Nos hôtels
             alt="image hypnos paris"
           />
         </div>
-        <div class="card-body bg-custom">
+        <div class="card-body bg-custom rounded-bottom"">
           <h4 class="text-center">Le Cocooning</h4>
           <h5 class="card-title text-center">Paris</h5>
           <p class="card-text text-center py-2">
@@ -32,7 +38,7 @@ Nos hôtels
           <div class="text-center">
             <div class="btn-group">
               <a
-                href="{% url 'login' %}"
+                href="{% url 'cocooning' %}"
                 type="button"
                 class="btn btn-sm btn-custom text-light rounded-pill"
               >
@@ -47,11 +53,11 @@ Nos hôtels
           <img
             src="{% static 'images/hotel8.jpg' %}"
             class="card-img-top"
-            alt="image hypnos paris"
+            alt="image hypnos kilimandjaro"
           />
         </div>
 
-        <div class="card-body bg-custom">
+        <div class="card-body bg-custom rounded-bottom"">
           <h4 class="text-center">Le Kilimandjaro</h4>
           <h5 class="card-title text-center">Courchevel</h5>
           <p class="card-text text-center py-2">
@@ -61,7 +67,7 @@ Nos hôtels
           <div class="text-center">
             <div class="btn-group">
               <a
-                href="{% url 'login' %}"
+                href="{% url 'kilimandjaro' %}"
                 type="button"
                 class="btn btn-sm btn-custom text-light rounded-pill"
               >
@@ -77,11 +83,11 @@ Nos hôtels
           <img
             src="{% static 'images/hotel9.jpg' %}"
             class="card-img-top"
-            alt="image hypnos paris"
+            alt="image hypnos cannes"
           />
         </div>
 
-        <div class="card-body bg-custom">
+        <div class="card-body bg-custom rounded-bottom">
           <h4 class="text-center">Le Carlton</h4>
           <h5 class="card-title text-center">Cannes</h5>
           <p class="card-text text-center py-2">
@@ -91,7 +97,7 @@ Nos hôtels
           <div class="text-center">
             <div class="btn-group">
               <a
-                href="{% url 'login' %}"
+                href="{% url 'carlton' %}"
                 type="button"
                 class="btn btn-sm btn-custom text-light rounded-pill"
               >
@@ -107,11 +113,11 @@ Nos hôtels
           <img
             src="{% static 'images/hotel5.jpg' %}"
             class="card-img-top"
-            alt="image hypnos paris"
+            alt="image hypnos nice"
           />
         </div>
 
-        <div class="card-body bg-custom">
+        <div class="card-body bg-custom rounded-bottom">
           <h4 class="text-center">Splendid Hôtel</h4>
           <h5 class="card-title text-center">Nice</h5>
           <p class="card-text text-center py-2">
@@ -121,7 +127,7 @@ Nos hôtels
           <div class="text-center">
             <div class="btn-group">
               <a
-                href="{% url 'login' %}"
+                href="{% url 'splendid' %}"
                 type="button"
                 class="btn btn-sm btn-custom text-light rounded-pill"
               >
@@ -137,11 +143,11 @@ Nos hôtels
           <img
             src="{% static 'images/hotel4.jpg' %}"
             class="card-img-top"
-            alt="image hypnos paris"
+            alt="image hypnos strasbourg"
           />
         </div>
 
-        <div class="card-body bg-custom">
+        <div class="card-body bg-custom rounded-bottom">
           <h4 class="text-center">Hôtel Meetic</h4>
           <h5 class="card-title text-center">Strasbourg</h5>
           <p class="card-text text-center py-2">
@@ -151,7 +157,7 @@ Nos hôtels
           <div class="text-center">
             <div class="btn-group">
               <a
-                href="{% url 'login' %}"
+                href="{% url 'meetic' %}"
                 type="button"
                 class="btn btn-sm btn-custom text-light rounded-pill"
               >
@@ -167,11 +173,11 @@ Nos hôtels
           <img
             src="{% static 'images/hotel7.jpg' %}"
             class="card-img-"
-            alt="image hypnos paris"
+            alt="image hypnos quiberon"
           />
         </div>
 
-        <div class="card-body bg-custom">
+        <div class="card-body bg-custom rounded-bottom">
           <h4 class="text-center">Le Beach Hôtel</h4>
           <h5 class="card-title text-center">Quiberon</h5>
           <p class="card-text text-center py-2">
@@ -181,7 +187,7 @@ Nos hôtels
           <div class="text-center">
             <div class="btn-group">
               <a
-                href="{% url 'login' %}"
+                href="{% url 'beach' %}"
                 type="button"
                 class="btn btn-sm btn-custom text-light rounded-pill"
               >
@@ -197,11 +203,11 @@ Nos hôtels
           <img
             src="{% static 'images/hotel6.jpg' %}"
             class="card-img-top"
-            alt="image hypnos paris"
+            alt="image hypnos deauville"
           />
         </div>
 
-        <div class="card-body bg-custom">
+        <div class="card-body bg-custom rounded-bottom">
           <h4 class="text-center">Casino Royale</h4>
           <h5 class="card-title text-center">Deauville</h5>
           <p class="card-text text-center py-2">
@@ -211,7 +217,7 @@ Nos hôtels
           <div class="text-center">
             <div class="btn-group">
               <a
-                href="{% url 'login' %}"
+                href="{% url 'casino_royale' %}"
                 type="button"
                 class="btn btn-sm btn-custom text-light rounded-pill"
               >
