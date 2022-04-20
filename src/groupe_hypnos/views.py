@@ -1,8 +1,6 @@
-from tokenize import group
+
 from django.http import Http404, HttpResponseRedirect
 from django.shortcuts import render
-from .forms import ContactForm
-from .forms import SignupForm
 from groupe_hypnos.models import Hotel
 from django.urls import reverse
 
@@ -10,30 +8,18 @@ def home_view(request):
     return render(request, 'groupe_hypnos/home.html')
 
 def hotel_view(request):
-    return render(request, 'hotel.html')
-
-def suites_view(request):
-    return render(request, 'suites.html')
+    return render(request, 'groupe_hypnos/hotel.html')
 
 def contact_view(request):
     return render(request, 'contact.html')
 
-def login_view(request):
-    return render(request, 'login.html')
 
-def signup_view(request):
-    if request.method == "POST":
-        form = SignupForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return HttpResponseRedirect(reverse('hotel:hotel'))
-    else:
-        form = SignupForm()
+# def book_view(request):
+#     return render(request, 'groupe_hypnos/book.html')
 
-    return render(request, 'signup.html', context={"form":form})
 
-def book_view(request):
-    return render(request, 'groupe_hypnos/book.html')
+
+#HOTELS HYPNOS 
 
 def cocooning_view(request):
     hotel = Hotel.objects.all()
@@ -62,6 +48,11 @@ def beach_view(request):
 def casino_royale_view(request):
     hotel = Hotel.objects.all()
     return render(request, 'groupe_hypnos/casino_royale.html', context={'hotels': hotel})
+
+
+
+
+# RGPD
 
 def rgpd_view(request):
     return render(request, 'rgpd.html')

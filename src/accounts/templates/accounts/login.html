@@ -15,13 +15,14 @@
   <div class="row justify-content-center box">
     <div class="col-lg-4">
       <h2 class="pt-5 fw-bold text-center animate__animated animate__backInUp ainfinite animate__slow	3s">Se connecter</h2>
-      <form class="mt-5" method="POST">
+      <form class="mt-5" method="POST" action="/">
         {% csrf_token %}
+
         <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
-            <i class="fas fa-at"></i>
+            <i class="fas fa-user"></i>
           </span>
-          <input type="email" class="form-control" placeholder="Email" />
+          <input type="text" class="form-control" id="username" name="username" placeholder="Pseudo" />
         </div>
         <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
@@ -30,6 +31,8 @@
           <input
             type="password"
             class="form-control"
+            id="password"
+            name="password"
             placeholder="Mot de passe"
           />
         </div>

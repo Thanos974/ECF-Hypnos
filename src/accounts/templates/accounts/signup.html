@@ -20,26 +20,32 @@ S'inscrire
   <div class="row justify-content-center box">
     <div class="col-lg-4">
       <h2 class="pb-5 fw-bold text-center animate__animated animate__backInUp ainfinite animate__slow	3s">Créer votre compte Hypnos</h2>
-      <form method="POST" class="justify-content-center text-center">
+      <form method="POST" class="justify-content-center text-center" action="">
         {% csrf_token %}
          
-          <div class="input-group input-group-lg mb-3">
+        <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
             <i class="fas fa-user"></i>
           </span>
-          <input type="text" class="form-control" placeholder="Nom" />
+          <input type="text" class="form-control" id="username" name="username"placeholder="Pseudo" />
         </div>
         <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
             <i class="fas fa-user"></i>
           </span>
-          <input type="text" class="form-control" placeholder="Prénom" />
+          <input type="text" class="form-control" id="last_name" name="last_name"placeholder="Nom" />
+        </div>
+        <div class="input-group input-group-lg mb-3">
+          <span class="input-group-text">
+            <i class="fas fa-user"></i>
+          </span>
+          <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Prénom" />
         </div>
         <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
             <i class="fas fa-at"></i>
           </span>
-          <input type="email" class="form-control" placeholder="Email" />
+          <input type="email" class="form-control" name="email" placeholder="Email" />
         </div>
         <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
@@ -50,9 +56,6 @@ S'inscrire
             class="form-control"
             placeholder="Mot de passe"
           />
-        </div>
-        <div class="g-recaptcha">
-
         </div>
         <div class="d-grid gap-2 shadow-lg">
           <input

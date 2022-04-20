@@ -6,6 +6,7 @@
 {% url 'suites' as suites %}
 {% url 'contact' as contact %} 
 {% url 'login' as login %} 
+{% url 'logout' as logout %}
 {% url 'signup' as signup %}
 
 <!--- Navbar -->
@@ -55,16 +56,45 @@
             >Suites</a
           >
         </li>
-        <li class="nav-item">
+        <li class="nav-item ">
           <a
             class="nav-link menu fs-5 {% if request.path == contact %} active {% endif %}"
             href="{% url 'contact' %}" 
             >Contact</a
           >
         </li>
+        
+      </ul>
+      <ul class="navbar-nav mb-2 mb-lg-0 text-light text-center">
 
+      {% if user.is_authenticated %}
+        <li class="nav-item text-custom px-5">
+          {{ user.username }}
+          <a
+            class="nav-link menu fs-5 px-3 d-inline {% if request.path == logout %} active {% endif %}"
+            href="{% url 'logout' %}"
+            >Déconnexion</a
+          >
+        </li>
+      {% else%}
+        <li class="nav-item">
+          <a
+            class="nav-link menu fs-5 {% if request.path == login %} active {% endif %}"
+            href="{% url 'login' %}" 
+            >Connexion</a
+          >
+        </li>
+        <li class="nav-item ">
+          <a
+            class="nav-link menu fs-5 {% if request.path == signup %} active {% endif %}"
+            href="{% url 'signup' %}" 
+            >S'inscrire</a
+          >
+        </li>
+      {% endif %}
+      </ul>
 
-        <li class="nav-item dropdown fs-5 menu">
+        {% comment %} <li class="nav-item dropdown fs-5 menu">
           <a class="nav-link dropdown-toggle {% if request.path == login %} active {% endif %} {% if request.path == signup %} active {% endif %}" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Espace Membre
           </a>
@@ -72,27 +102,9 @@
             <li><a class="dropdown-item " href="{% url 'login' %}">Connexion</a></li>
             <li><a class="dropdown-item " href="{% url 'signup' %}">S'inscrire</a></li>
           </ul>
-        </li>
-
-
-        {% comment %} {% if request.user.is_authenticated %}
-          <li class="nav-item">
-            <a
-              class="nav-link menu fs-4 {% if request.path == logout %} active {% endif %}"
-              href="{% url 'login' %}"
-              >Déconnexion</a
-            >
-          </li>
-        {% else%}
-          <li class="nav-item">
-            <a
-              class="nav-link menu fs-4 {% if request.path == login %} active {% endif %}"
-              href="{% url 'login' %}"
-              >Connexion</a
-            >
-          </li>
-        {% endif %} {% endcomment %}
-      </ul>
+        </li> {% endcomment %}
+      
+            
     </div>
   </div>
 </nav>
