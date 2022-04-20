@@ -6,7 +6,7 @@ User = get_user_model()
 
 def signup(request):
     if request.method == "POST":
-        username = request.POST.get('username')
+        username = request.POST.get("username")
         last_name = request.POST.get("last_name")
         first_name = request.POST.get("first_name")
         email = request.POST.get("email")
@@ -21,13 +21,12 @@ def signup(request):
 def login_user(request):
     if request.method == "POST":
         # Connecter l'utilisateur
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-
+        username = request.POST.get("username")
+        password = request.POST.get("password")
+        
         user = authenticate(username=username, password=password)
-        if user:
-            login(request, user)
-            return redirect('book')
+        login(request, user)
+        return redirect('book')
 
     return render(request, 'accounts/login.html')
 
@@ -35,6 +34,7 @@ def login_user(request):
 def logout_user(request):
     logout(request)
     return redirect('home')
+
 
 
 def contact_view(request):
@@ -55,3 +55,4 @@ def contact_view(request):
 
 def dashboard(request):
     return render(request, 'accounts/dashboard.html')
+
