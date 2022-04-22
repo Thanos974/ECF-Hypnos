@@ -14,16 +14,39 @@ Réservation
 
       <form>
         <div class="input-group input-group-lg mb-3">
-          <span class="input-group-text">
-            <i class="fas fa-hotel"></i>
-          </span>
-          <input type="text" class="form-control" placeholder="Choisir un hôtel" />
+          
+          <div class="input-group input-group-lg">
+            <span class="input-group-text">
+              <i class="fas fa-hotel"> </i>
+            </span>
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>Choisir un hôtel</option>
+              <option value="1">Le Cocooning Paris</option>
+              <option value="2">Le Kilimandjaro Courchevel</option>
+              <option value="3">Le Carlton Cannes</option>
+              <option value="4">Splendid Hôtel Nice</option>
+              <option value="5">Hôtel Meetic Strasbourg</option>
+              <option value="6">Le Beach Hôtel Quiberon</option>
+              <option value="7">Casino Royale Deauville</option>
+            </select>
+          </div>
         </div>
         <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
             <i class="fas fa-bed"></i>
           </span>
-          <input type="text" class="form-control" placeholder="Suite" />
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected>Choisir une suite</option>
+            <option value="1">Suite Deluxe</option>
+            <option value="2">Suite Saint-Honoré</option>
+            <option value="3">Suite Honeymoon</option>
+            <option value="4">Suite Penthouse</option>
+            <option value="5">Suite Royale</option>
+            <option value="6">Suite Impériale</option>
+            <option value="7">Suite Lumière</option>
+            <option value="7">Suite Presidentielle</option>
+            <option value="7">Suite Prestige Junior</option>
+          </select>
         </div>
         <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
@@ -45,7 +68,7 @@ Réservation
         <div class="d-grid gap-2">
           <input
             type="submit"
-            value="Envoyer"
+            value="Réserver"
             class="btn btn-custom btn-block text-light btn-lg"
           />
         </div>
