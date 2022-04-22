@@ -25,8 +25,10 @@ def login_user(request):
         password = request.POST.get("password")
         
         user = authenticate(username=username, password=password)
-        login(request, user)
-        return redirect('book')
+
+        if user:
+            login(request, user)
+            return redirect('book')
 
     return render(request, 'accounts/login.html')
 

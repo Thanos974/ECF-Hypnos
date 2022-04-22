@@ -76,7 +76,7 @@
             >Déconnexion</a
           >
         </li>
-      {% else%}
+      {% else %}
         <li class="nav-item">
           <a
             class="nav-link menu fs-5 {% if request.path == login %} active {% endif %}"
@@ -93,18 +93,6 @@
         </li>
       {% endif %}
       </ul>
-
-        {% comment %} <li class="nav-item dropdown fs-5 menu">
-          <a class="nav-link dropdown-toggle {% if request.path == login %} active {% endif %} {% if request.path == signup %} active {% endif %}" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Espace Membre
-          </a>
-          <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item " href="{% url 'login' %}">Connexion</a></li>
-            <li><a class="dropdown-item " href="{% url 'signup' %}">S'inscrire</a></li>
-          </ul>
-        </li> {% endcomment %}
-      
-            
     </div>
   </div>
 </nav>
