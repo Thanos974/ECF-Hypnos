@@ -8,7 +8,7 @@ class Custom_user(AbstractUser):
   password = models.CharField(max_length=100, blank=True)
 
   def __str__(self):
-    return self.last_name
+    return self.first_name
 
 
   

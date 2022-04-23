@@ -23,7 +23,7 @@ def login_user(request):
         # Connecter l'utilisateur
         username = request.POST.get("username")
         password = request.POST.get("password")
-        
+        login_user.save()
         user = authenticate(username=username, password=password)
 
         if user:
