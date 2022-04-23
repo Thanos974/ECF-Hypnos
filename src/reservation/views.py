@@ -1,5 +1,5 @@
 from django.shortcuts import render
-# from django.views.generic import ListView
+
 # from .models import Room, Booking
 
 # Create your views here.
@@ -8,7 +8,7 @@ from django.shortcuts import render
 
 
 
-# class BookingList(ListView):
-#   model=Booking
+def booking(request):
+  return render(request, 'reservation/booking.html')
 
 
