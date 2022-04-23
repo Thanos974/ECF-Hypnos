@@ -34,20 +34,14 @@ Vous trouverez dans le dossier PDF ECF tout les document afférant à la bonne u
 ```bash
  Avoir installer au préalable python3.9 ou 3.10 sur votre PC
 ```
-Créer un dossier sur votre machine
+Créer un dossier sur votre machine que vous nommerais hypnos.
 
-
-Cloner le projet dans 
+Cloner le projet dans ce dossier
 
 ```bash
   git clone https://github.com/Thanos974/ECF-Hypnos.git
 ```
 
-Aller dans le répertoire du projet nommée src là où se situe le fichier manage.py qui permettra d'installé les dépendances. 
-
-```bash
-  cd src
-```
 Créer un environnement virtuel:
 
 ```bash
@@ -62,6 +56,12 @@ Sur Windows :
 Sur Mac :
 ```bash
    mac => source .env/bin/activate
+```
+
+Aller dans le répertoire du projet nommée src là où se situe le fichier manage.py qui permettra d'installé les dépendances. 
+
+```bash
+  cd src
 ```
 
 Installer les dépendances via le fichier requirements.txt
