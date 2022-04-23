@@ -14,40 +14,68 @@ Tout d'abord pour pouvoir utilisé le projet de le respository github, il faudra
 ## Documentation
 
 [Documentation]
-    (https://www.python.org/downloads/)
-    (https://docs.djangoproject.com/fr/4.0/)
+Vous trouverez dans le dossier PDF ECF tout les document afférant à la bonne utilisation de l'application.
+
+    - Documentation technique
+    - Manuel d'utilisation
+    - Charte graphique
+    
+    La documentation officielle si beosin:
+    
+        Pour télécharger python:
+            https://www.python.org/downloads/
+
+        Documentation sur django:
+            https://docs.djangoproject.com/fr/4.0/
 
 ## Tester Hypnos en local
 
 
 ```bash
- Installer python3.9 ou 3.10 sur votre PC
+ Avoir installer au préalable python3.9 ou 3.10 sur votre PC
 ```
+Créer un dossier sur votre machine
 
-Cloner le projet
+
+Cloner le projet dans 
 
 ```bash
   git clone https://github.com/Thanos974/ECF-Hypnos.git
 ```
 
-Aller dans le répertoire du projet la où se situe le fichier manage.py
+Aller dans le répertoire du projet nommée src là où se situe le fichier manage.py qui permettra d'installé les dépendances. 
 
 ```bash
   cd src
 ```
+Créer un environnement virtuel:
 
-Installer les dépendances
+```bash
+ dans le temrinal => python -m venv .venv
+```
+Sourcer votre environnement virtuel:
+
+Sur Windows :
+```bash
+   windows => source .venv/Scripts/activate
+```
+Sur Mac :
+```bash
+   mac => source .env/bin/activate
+```
+
+Installer les dépendances via le fichier requirements.txt
 
 ```bash
   pip install -r requirements.xt
 ```
 
-Démarrer le serveur djagno pour créer par défault automatiquement le fichier SQLite3
+Démarrer le serveur django 
 
 ```bash
   python manage.py runserver
 ```
-Faire la migration des données
+Faire la migration des données pour créer automatiquement par défault le fichier SQLite3 qui sera la base de donnée
 
 ```bash
   python manage.py migrate
