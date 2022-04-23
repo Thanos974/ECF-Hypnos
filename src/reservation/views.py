@@ -7,8 +7,5 @@ from django.shortcuts import render
 #   model=Room
 
 
-
-def booking(request):
-  return render(request, 'reservation/booking.html')
-
-
+def book_view(request):
+    return render(request, 'reservation/book.html')

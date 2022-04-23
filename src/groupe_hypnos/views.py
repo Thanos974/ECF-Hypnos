@@ -13,9 +13,6 @@ def hotel_view(request):
 def contact_view(request):
     return render(request, 'contact.html')
 
-def book_view(request):
-    return render(request, 'groupe_hypnos/book.html')
-
 
 
 
