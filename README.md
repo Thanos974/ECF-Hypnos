@@ -58,7 +58,7 @@ Sur Mac :
    mac => source .env/bin/activate
 ```
 
-Créer un fichier .env dans le dossier "hypnose" :
+Créer un fichier .env dans le dossier "hypnos" :
 - ajouter une SECRET_KEY via un générateur de Keys django. 
 - ajouter le DEBUG=True
 - ajouter ALLOWED_HOSTS
