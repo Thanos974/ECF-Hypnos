@@ -27,9 +27,9 @@ environ.Env.read_env(env_file=str(BASE_DIR / "hypnos" / ".env"))
 SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool("DEBUG", False)
+DEBUG = env.bool("DEBUG")
 
-ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 
 # Application definition
@@ -126,12 +126,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/fr/4.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR, 'static'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'mediafiles'
+MEDIA_ROOT = BASE_DIR / 'images'
 
 AUTH_USER_MODEL = "accounts.Custom_user"
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+

@@ -10,15 +10,15 @@
 {% url 'signup' as signup %}
 
 <!--- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top px-4">
   <div class="container-fluid">
-    <a class="navbar-brand text-light" href="{% url 'home' %}">
+    <a class="navbar-brand" href="{% url 'home' %}">
       <img
         class="img-fluid"
-        src="{% static 'images/logo.png' %}"
+        src="{% static 'images/logo-hypnos-white.png' %}"
         alt="logo groupe hypnos"
-        width="90"
-        height="70"
+        width="60"
+        height="50"
       />
     </a>
     <button
@@ -67,44 +67,33 @@
       </ul>
       <ul class="navbar-nav mb-2 mb-lg-0 text-light text-center">
 
-      {% if user.is_authenticated %}
-        <li class="nav-item text-custom px-5">
-          {{ user.username }}
-          <a
-            class="nav-link menu fs-5 px-3 d-inline {% if request.path == logout %} active {% endif %}"
-            href="{% url 'logout' %}"
-            >Déconnexion</a
-          >
-        </li>
-      {% else%}
-        <li class="nav-item">
-          <a
-            class="nav-link menu fs-5 {% if request.path == login %} active {% endif %}"
-            href="{% url 'login' %}" 
-            >Connexion</a
-          >
-        </li>
-        <li class="nav-item ">
-          <a
-            class="nav-link menu fs-5 {% if request.path == signup %} active {% endif %}"
-            href="{% url 'signup' %}" 
-            >S'inscrire</a
-          >
-        </li>
-      {% endif %}
+        {% if user.is_authenticated %}
+        
+          <li class="nav-item text-custom px-5">
+            {{ user.username }}
+            <a
+              class="nav-link menu fs-5 px-3 d-inline {% if request.path == logout %} active {% endif %}"
+              href="{% url 'logout' %}"
+              >Déconnexion</a
+            >
+          </li>
+        {% else %}
+          <li class="nav-item">
+            <a
+              class="nav-link menu fs-5 {% if request.path == login %} active {% endif %}"
+              href="{% url 'login' %}" 
+              >Connexion</a
+            >
+          </li>
+          <li class="nav-item ">
+            <a
+              class="nav-link menu fs-5 {% if request.path == signup %} active {% endif %}"
+              href="{% url 'signup' %}" 
+              >S'inscrire</a
+            >
+          </li>
+        {% endif %}
       </ul>
-
-        {% comment %} <li class="nav-item dropdown fs-5 menu">
-          <a class="nav-link dropdown-toggle {% if request.path == login %} active {% endif %} {% if request.path == signup %} active {% endif %}" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Espace Membre
-          </a>
-          <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item " href="{% url 'login' %}">Connexion</a></li>
-            <li><a class="dropdown-item " href="{% url 'signup' %}">S'inscrire</a></li>
-          </ul>
-        </li> {% endcomment %}
-      
-            
     </div>
   </div>
 </nav>

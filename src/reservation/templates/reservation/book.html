@@ -1,0 +1,87 @@
+{% extends 'base.html' %} {% load static %}
+
+{% block title %}
+Réservation
+{% endblock %}
+
+<!--- Réservation -->
+
+{% block header %}
+<div class="container-fluid img-book py-5">
+  <div class="row justify-content-center box">
+    <div class="col-lg-6">
+      <h3 class="pb-5 text-light text-center animate__animated animate__backInUp ainfinite animate__slow	3s">Réserver votre suite</h3>
+
+      <form>
+        <div class="input-group input-group-lg mb-3">
+          
+          <div class="input-group input-group-lg">
+            <span class="input-group-text">
+              <i class="fas fa-hotel"> </i>
+            </span>
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>Choisir un hôtel</option>
+              <option value="1">Le Cocooning Paris</option>
+              <option value="2">Le Kilimandjaro Courchevel</option>
+              <option value="3">Le Carlton Cannes</option>
+              <option value="4">Splendid Hôtel Nice</option>
+              <option value="5">Hôtel Meetic Strasbourg</option>
+              <option value="6">Le Beach Hôtel Quiberon</option>
+              <option value="7">Casino Royale Deauville</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-group input-group-lg mb-3">
+          <span class="input-group-text">
+            <i class="fas fa-bed"></i>
+          </span>
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected>Choisir une suite</option>
+            <option value="1">Suite Deluxe</option>
+            <option value="2">Suite Saint-Honoré</option>
+            <option value="3">Suite Honeymoon</option>
+            <option value="4">Suite Penthouse</option>
+            <option value="5">Suite Royale</option>
+            <option value="6">Suite Impériale</option>
+            <option value="7">Suite Lumière</option>
+            <option value="7">Suite Presidentielle</option>
+            <option value="7">Suite Prestige Junior</option>
+          </select>
+        </div>
+        <div class="input-group input-group-lg mb-3">
+          <span class="input-group-text">
+            <i class="fa-solid fa-calendar-check"></i>
+          </span>
+          <input type="datetime-local" class="form-control"  />
+        </div>
+        <div class="input-group input-group-lg mb-3">
+          <span class="input-group-text">
+            <i class="fa-solid fa-calendar-check"></i>
+          </span>
+          <input
+            type="datetime-local"
+            class="form-control"
+            
+          />
+        </div>
+
+        <div class="d-grid gap-2">
+          <input
+            type="submit"
+            value="Réserver"
+            class="btn btn-custom btn-block text-light btn-lg"
+          />
+        </div>
+      </form>
+      <div class="text-center py-3">
+        <a href="{% url 'dashboard' %}" type="button" class="btn btn-custom text-light">Voir votre espace membre</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+{% endblock %}
+

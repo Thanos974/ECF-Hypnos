@@ -8,4 +8,4 @@ class Suite(models.Model):
     price = models.FloatField(max_length=6, verbose_name="Prix")
 
     def __str__(self):
-       return self.name
+       return self.title
