@@ -3,9 +3,12 @@
 
 <!--- Le Formulaire de contact -->
 
-{% block header %} {% endblock %} {% block content %}
+{% block header %} {% endblock %} 
+
+
+{% block content %}
 <div class="contact container-fluid">
-  <div class="row justify-content-center text-center h-100">
+  <div class="row justify-content-center text-center">
     <div class="col-md-7 pb-5">
       <h2
         class="fw-bold pt-5 fs-1 animate__animated animate__backInUp ainfinite animate__slow 3s"
@@ -47,26 +50,26 @@
           </div>
         </div>
       </section>
-      <form class="input-form" method="POST" action="">
+      <form class="input-form" method="POST">
         {% csrf_token %}
 
         <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
             <i class="fas fa-user"></i>
           </span>
-          <input type="text" class="form-control" placeholder="Nom" />
+          <input type="text" class="form-control" name="first_name" placeholder="Nom" />
         </div>
         <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
             <i class="fas fa-user"></i>
           </span>
-          <input type="text" class="form-control" placeholder="Prénom" />
+          <input type="text" class="form-control" name="first_name" placeholder="Prénom" />
         </div>
         <div class="input-group input-group-lg mb-3">
           <span class="input-group-text">
             <i class="fas fa-at"></i>
           </span>
-          <input type="text" class="form-control" placeholder="Email" />
+          <input type="text" class="form-control" name="email" placeholder="Email" />
         </div>
 
         <div class="input-group input-group-lg mb-3">

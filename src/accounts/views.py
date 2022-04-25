@@ -40,19 +40,18 @@ def logout_user(request):
 
 
 
-# def contact_view(request):
-#     if request.method == "POST":
-#         username = request.POST.get('username')
-#         last_name = request.POST.get("last_name")
-#         first_name = request.POST.get("first_name")
-#         email = request.POST.get("email")
-#         password = request.POST.get("password")
-#         user = User.objects.create_user(username=username, last_name=last_name, first_name=first_name, email=email, password=password)
-
-#         login(request, user)
-#         return redirect('home')
+def contact_view(request):
+    if request.method == "POST":
+       
+        last_name = request.POST.get("last_name")
+        first_name = request.POST.get("first_name")
+        email = request.POST.get("email")
+        password = request.POST.get("password")
+       
+        # login(request, user)
+        # return redirect('home')
         
-#     return render(request, 'accounts/contact.html')
+    return render(request, 'accounts/contact.html')
 
 
 def dashboard(request):
