@@ -141,7 +141,9 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
- 
+ .contact {
+   height: 100%;
+ }
 }
 
 

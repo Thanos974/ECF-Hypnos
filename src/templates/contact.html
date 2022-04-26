@@ -48,9 +48,9 @@
         </div>
       </section>
       <section>
-        <form class="input-form" method="POST">
+        <form class="input-form" method="POST" action="{% url 'contact' %}">
           {% csrf_token %}
-  
+          {{ form }}
           <div class="input-group input-group-lg mb-3">
             <span class="input-group-text">
               <i class="fas fa-user"></i>
