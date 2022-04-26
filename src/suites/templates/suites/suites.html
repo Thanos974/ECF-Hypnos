@@ -36,6 +36,7 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="{% url 'suite_deluxe' %}" class="details me-3">En savoir plus</a>
+            {% if not request.user.is_authenticated %}
             <a
               href="{% url 'login' %}"
               type="button"
@@ -43,6 +44,15 @@ Nos Suites
             >
               Réserver
             </a>
+            {% else %}
+            <a
+              href="{% url 'book' %}"
+              type="button"
+              class="btn btn-sm btn-custom text-light rounded-pill me-2"
+            >
+              Réserver
+            </a>
+            {% endif %}
             <a
             href="https://www.booking.com/" target="_blank"
             type="button"
@@ -71,12 +81,23 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="{% url 'suite_saint_honore' %}" class="details me-3">En savoir plus</a>
+            {% if not request.user.is_authenticated %}
             <a
               href="{% url 'login' %}"
               type="button"
-              class="btn btn-sm btn-custom text-light rounded-pill me-2">
+              class="btn btn-sm btn-custom text-light rounded-pill me-2"
+            >
               Réserver
             </a>
+            {% else %}
+            <a
+              href="{% url 'book' %}"
+              type="button"
+              class="btn btn-sm btn-custom text-light rounded-pill me-2"
+            >
+              Réserver
+            </a>
+            {% endif %}
             <a
             href="https://www.booking.com/" target="_blank"
             type="button"
@@ -106,6 +127,7 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="{% url 'suite_honeymoon' %}" class="details me-3">En savoir plus</a>
+            {% if not request.user.is_authenticated %}
             <a
               href="{% url 'login' %}"
               type="button"
@@ -113,6 +135,15 @@ Nos Suites
             >
               Réserver
             </a>
+            {% else %}
+            <a
+              href="{% url 'book' %}"
+              type="button"
+              class="btn btn-sm btn-custom text-light rounded-pill me-2"
+            >
+              Réserver
+            </a>
+            {% endif %}
             <a
             href="https://www.booking.com/" target="_blank"
             type="button"
@@ -142,6 +173,7 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="{% url 'suite_penthouse' %}" class="details me-3">En savoir plus</a>
+            {% if not request.user.is_authenticated %}
             <a
               href="{% url 'login' %}"
               type="button"
@@ -149,6 +181,15 @@ Nos Suites
             >
               Réserver
             </a>
+            {% else %}
+            <a
+              href="{% url 'book' %}"
+              type="button"
+              class="btn btn-sm btn-custom text-light rounded-pill me-2"
+            >
+              Réserver
+            </a>
+            {% endif %}
             <a
             href="https://www.booking.com/" target="_blank"
             type="button"
@@ -178,6 +219,7 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="{% url 'suite_royale' %}" class="details me-3">En savoir plus</a>
+            {% if not request.user.is_authenticated %}
             <a
               href="{% url 'login' %}"
               type="button"
@@ -185,6 +227,15 @@ Nos Suites
             >
               Réserver
             </a>
+            {% else %}
+            <a
+              href="{% url 'book' %}"
+              type="button"
+              class="btn btn-sm btn-custom text-light rounded-pill me-2"
+            >
+              Réserver
+            </a>
+            {% endif %}
             <a
             href="https://www.booking.com/" target="_blank"
             type="button"
@@ -219,7 +270,23 @@ Nos Suites
               class="btn btn-sm btn-custom text-light rounded-pill me-2"
             >
               Réserver
+            </a>{% if not request.user.is_authenticated %}
+            <a
+              href="{% url 'login' %}"
+              type="button"
+              class="btn btn-sm btn-custom text-light rounded-pill me-2"
+            >
+              Réserver
             </a>
+            {% else %}
+            <a
+              href="{% url 'book' %}"
+              type="button"
+              class="btn btn-sm btn-custom text-light rounded-pill me-2"
+            >
+              Réserver
+            </a>
+            {% endif %}
             <a
             href="https://www.booking.com/" target="_blank"
             type="button"
@@ -248,6 +315,7 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="{% url 'suite_lumiere' %}" class="details me-3">En savoir plus</a>
+            {% if not request.user.is_authenticated %}
             <a
               href="{% url 'login' %}"
               type="button"
@@ -255,6 +323,15 @@ Nos Suites
             >
               Réserver
             </a>
+            {% else %}
+            <a
+              href="{% url 'book' %}"
+              type="button"
+              class="btn btn-sm btn-custom text-light rounded-pill me-2"
+            >
+              Réserver
+            </a>
+            {% endif %}
             <a
             href="https://www.booking.com/" target="_blank"
             type="button"
@@ -283,6 +360,7 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="{% url 'suite_presidentielle' %}" class="details me-3">En savoir plus</a>
+            {% if not request.user.is_authenticated %}
             <a
               href="{% url 'login' %}"
               type="button"
@@ -290,6 +368,15 @@ Nos Suites
             >
               Réserver
             </a>
+            {% else %}
+            <a
+              href="{% url 'book' %}"
+              type="button"
+              class="btn btn-sm btn-custom text-light rounded-pill me-2"
+            >
+              Réserver
+            </a>
+            {% endif %}
             <a
             href="https://www.booking.com/" target="_blank"
             type="button"
@@ -319,6 +406,7 @@ Nos Suites
           </p>
           <div class="btn-group">
             <a href="{% url 'suite_prestige_jr' %}" class="details me-3">En savoir plus</a>
+            {% if not request.user.is_authenticated %}
             <a
               href="{% url 'login' %}"
               type="button"
@@ -326,6 +414,15 @@ Nos Suites
             >
               Réserver
             </a>
+            {% else %}
+            <a
+              href="{% url 'book' %}"
+              type="button"
+              class="btn btn-sm btn-custom text-light rounded-pill me-2"
+            >
+              Réserver
+            </a>
+            {% endif %}
             <a
             href="https://www.booking.com/" target="_blank"
             type="a"

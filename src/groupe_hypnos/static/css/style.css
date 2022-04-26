@@ -62,6 +62,15 @@ nav {
   color: var(--bs-gray);
 }
 
+/********** Reservation **********/
+
+.frame {
+  background-color: var(--bs-card);
+  border-radius: 10px;
+  margin-bottom: 150px;
+  padding: 50px;
+}
+
 /********** Background **********/
 
 .bg-container {

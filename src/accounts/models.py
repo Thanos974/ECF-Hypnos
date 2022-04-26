@@ -12,4 +12,4 @@ class Custom_user(AbstractUser):
     return self.first_name
 
 
-  
+

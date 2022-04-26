@@ -42,12 +42,12 @@ Cloner le projet dans ce dossier
   git clone https://github.com/Thanos974/ECF-Hypnos.git
 ```
 
-Créer un environnement virtuel:
+Créer un environnement virtuel :
 
 ```bash
  dans le temrinal => python -m venv .venv
 ```
-Sourcer votre environnement virtuel:
+Sourcer votre environnement virtuel :
 
 Sur Windows :
 ```bash
@@ -58,13 +58,18 @@ Sur Mac :
    mac => source .env/bin/activate
 ```
 
-Aller dans le répertoire du projet nommée src là où se situe le fichier manage.py qui permettra d'installé les dépendances. 
+Créer un fichier .env dans le dossier "hypnos" :
+- ajouter une SECRET_KEY via un générateur de Keys django. 
+- ajouter le DEBUG=True
+- ajouter ALLOWED_HOSTS
+
+Aller dans le répertoire du projet nommée "src" là où se situe le fichier manage.py qui permettra d'installé les dépendances. 
 
 ```bash
   cd src
 ```
 
-Installer les dépendances via le fichier requirements.txt
+Installer les dépendances via le fichier "requirements.txt" :
 
 ```bash
   pip install -r requirements.xt
