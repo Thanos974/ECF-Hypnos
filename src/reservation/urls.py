@@ -7,4 +7,5 @@ urlpatterns = [
    
   path('book/', views.book_view, name="book"),
   
+  
 ]

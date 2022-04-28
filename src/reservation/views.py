@@ -23,7 +23,6 @@ from suites.models import Suite
 
 
 
-
 def book_view(request):
     hotels = Hotel.objects.all()
     return render(request, 'reservation/book.html', {"data":hotels})
