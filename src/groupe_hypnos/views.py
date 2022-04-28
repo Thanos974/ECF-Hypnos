@@ -14,8 +14,6 @@ def contact_view(request):
     return render(request, 'contact.html')
 
 
-
-
 #HOTELS HYPNOS 
 
 def cocooning_view(request):

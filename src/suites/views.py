@@ -41,7 +41,7 @@ def suite_presidentielle(request):
 
 def suite_prestige_jr(request):
     suite = Suite.objects.all()
-    return render(request, 'suites/suite_prestige_jr.html', context={'suite':suite})
+    return render(request, 'suites/suite_prestige_jr.html', context={'suites':suite})
 
 def suite_royale(request):
     suite = Suite.objects.all()

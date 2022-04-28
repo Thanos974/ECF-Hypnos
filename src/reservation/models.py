@@ -4,8 +4,8 @@ from django.db import models
 class Booking(models.Model):
   hotel = models.CharField(max_length=50)
   suite =models.CharField(max_length=50)
-  checkin = models.BooleanField(verbose_name="Arrivée")
-  checkout = models.BooleanField(verbose_name="Départ")
+  checkin = models.DateTimeField(verbose_name="Arrivée")
+  checkout = models.DateTimeField(verbose_name="Départ")
 
   def __str__(self):
         return self.hotel and self.suite

@@ -42,12 +42,11 @@ def logout_user(request):
 
 
 def contact_view(request):
-#     form = ContactForm()
-#     if request.method == "POST":
-#         form = ContactForm(request.POST)
-#         if form.is_valid():
-#             form.cleaned_data[]
-#         return HttpResponseRedirect(reverse('remerciements'))
+   
+    if request.method == "POST":
+        last_name = request.POST.get("last_name");
+        first_list = request.POST.get("first_list");
+        email = request.POST.get("email");
 
     return render(request, 'accounts/contact.html')
 
