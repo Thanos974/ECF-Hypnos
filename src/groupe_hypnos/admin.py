@@ -5,10 +5,10 @@ from .models import Hotel
 
 class Hoteladmin(admin.ModelAdmin):
     list_display = ('name', 'description', 'address', 'zip_code', 'city')
-    search_fields = ['name']
+    search_fields = ['name', 'city']
 
 admin.site.register(Hotel, Hoteladmin)
 
 admin.site.site_header = "Hypnos Administration"
-
 admin.site.site_title = "Hypnos"
+admin.site.index_title = "Boss"

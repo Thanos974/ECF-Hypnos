@@ -9,9 +9,9 @@ MOTIFS = (
 )
 
 
-class SignupForm(forms.Form):
-  last_name = forms.CharField(max_length=10, required=False)
+class ContactForm(forms.Form):
+  last_name = forms.CharField(max_length=100, required=False)
   first_name = forms.CharField(max_length=50)
   email = forms.EmailField()
-  password = forms.CharField(min_length=8)
   motif = forms.ChoiceField(choices=MOTIFS)
+  message= forms.CharField(widget=forms.Textarea)

@@ -1,7 +1,8 @@
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout, get_user_model
-
+# from django.urls import reverse
+# from .forms import ContactForm
 
 User = get_user_model()
 
@@ -41,17 +42,16 @@ def logout_user(request):
 
 
 def contact_view(request):
+   
     if request.method == "POST":
-       
-        last_name = request.POST.get("last_name")
-        first_name = request.POST.get("first_name")
-        email = request.POST.get("email")
-        password = request.POST.get("password")
-       
-        # login(request, user)
-        # return redirect('home')
-        
+        last_name = request.POST.get("last_name");
+        first_list = request.POST.get("first_list");
+        email = request.POST.get("email");
+
     return render(request, 'accounts/contact.html')
+
+def remerciements_view(request):
+    return HttpResponse("Merci de nous avoir contacté")
 
 
 def dashboard(request):

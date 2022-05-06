@@ -23,16 +23,13 @@ Réservation
             <span class="input-group-text">
               <i class="fas fa-hotel"> </i>
             </span>
-            <select class="form-select" id="inputGroupSelect01">
-              <option selected>Choisir un hôtel</option>
-              <option value="1">Le Cocooning Paris</option>
-              <option value="2">Le Kilimandjaro Courchevel</option>
-              <option value="3">Le Carlton Cannes</option>
-              <option value="4">Splendid Hôtel Nice</option>
-              <option value="5">Hôtel Meetic Strasbourg</option>
-              <option value="6">Le Beach Hôtel Quiberon</option>
-              <option value="7">Casino Royale Deauville</option>
-            </select>
+              <select class="form-select" id="inputGroupSelect01" >
+                <option selected>Choisir un hôtel</option>
+
+                {% for hotel in data %}
+                  <option value=""> {{ hotel.name }} {{ hotel.city }}</option> 
+                {% endfor %} 
+              </select>
           </div>
         </div>
         <div class="input-group input-group-lg mb-3">
@@ -49,7 +46,7 @@ Réservation
             <option value="6">Suite Impériale</option>
             <option value="7">Suite Lumière</option>
             <option value="7">Suite Presidentielle</option>
-            <option value="7">Suite Prestige Junior</option>
+            <option value="7">Suite Prestige Junior</option> 
           </select>
         </div>
         <div class="input-group input-group-lg mb-3">

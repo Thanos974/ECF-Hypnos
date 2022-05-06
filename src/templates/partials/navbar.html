@@ -71,7 +71,12 @@
           <li class="nav-item text-custom px-5">
             {{ user.username }}
             <a
-              class="nav-link menu fs-5 px-3 d-inline {% if request.path == logout %} active {% endif %}"
+              class="nav-link menu fs-5 d-inline {% if request.path == logout %} active {% endif %}"
+              href="{% url 'dashboard' %}"
+              >Mon Compte</a
+            >
+            <a
+              class="nav-link menu fs-5 d-inline {% if request.path == logout %} active {% endif %}"
               href="{% url 'logout' %}"
               >Déconnexion</a
             >
